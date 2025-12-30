@@ -116,4 +116,18 @@ export class DepositProductIncentiveFormDialogComponent implements OnInit {
       ]
     });
   }
+  getConditionLabel(value: string): string {
+    switch (value) {
+      case 'lessthan':
+        return 'Less than';
+      case 'equal':
+        return 'Equal';
+      case 'greterthan':
+        return 'Greater than';
+      case 'notEqual':
+        return 'Not equal';
+      default:
+        return value;
+    }
+  }
 }
