@@ -119,13 +119,13 @@ export class DepositProductIncentiveFormDialogComponent implements OnInit {
   getConditionLabel(value: string): string {
     switch (value) {
       case 'lessthan':
-        return 'Less than';
+        return this.translateService.instant('labels.conditions.LessThan');
       case 'equal':
-        return 'Equal';
+        return this.translateService.instant('labels.conditions.Equal');
       case 'greterthan':
-        return 'Greater than';
+        return this.translateService.instant('labels.conditions.GreaterThan');
       case 'notEqual':
-        return 'Not equal';
+        return this.translateService.instant('labels.conditions.NotEqual');
       default:
         return value;
     }

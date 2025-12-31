@@ -812,6 +812,12 @@
       "move to previous working day": "move to previous working day",
       "move to next meeting day": "move to next meeting day"
     },
+    "conditions": {
+      "LessThan": "Less than",
+      "Equal": "Equal",
+      "GreaterThan": "Greater than",
+      "NotEqual": "Not equal"
+    },
     "commons": {
       "50 characters long": "50 characters long",
       "12 characters long": "12 characters long",
