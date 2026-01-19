@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "Mifos X",
+  "APP_NAME": "Mifos® X WebApp",
   "Logged in as": "Logged in as",
   "Remember me": "Remember me",
   "error.resource.notImplemented.type": "Not Implemented Error",
@@ -81,6 +81,7 @@
     "validation.msg.loan.principal.is.greater.than.max": "Principal amount {{params[0].value}} is invalid. Must be an amount less than or equal to Maximum principal amount {{params[1].value}}.",
     "validation.msg.loan.principal.is.less.than.min": "Principal amount {{params[0].value}} is invalid. Must be an amount greater than or equal to Minimum Principal amount {{params[1].value}}.",
     "validation.msg.loanproduct.accountingType.cannot.be.blank": "Accounting type is mandatory.",
+    "labels.commons.Only up to 6 decimal places allowed": "Only up to 6 decimal places allowed.",
     "validation.msg.loanproduct.accountingType.is.not.within.expected.range": "Accounting type is invalid. Must be a number between {{params[1].value}} and {{params[2].value}} inclusive.",
     "validation.msg.loanproduct.allowPartialPeriodInterestCalculation.not.supported.for.daily.calculations": "Allow Partial Installment Calculation cannot be set as true for daily calculation",
     "validation.msg.loanproduct.allowVariableInstallments.not.supported.for.selected.interest.calculation.type": "Variable Installment should be used with either daily interest calculation  or allow partial interest calculation true",
@@ -284,6 +285,12 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "Withdrawal fee period type is mandatory."
   },
   "labels": {
+    "version": {
+      "Tenant": "Tenant",
+      "Mifos WebApp": "Mifos® WebApp",
+      "Apache Fineract": "Apache Fineract®",
+      "Server": "Server"
+    },
     "accounting": {
       "Accrual (periodic)": "Accrual (periodic)",
       "Accrual (upfront)": "Accrual (upfront)",
@@ -300,7 +307,8 @@
       }
     },
     "breadcrumbs": {
-      "Home": "Home"
+      "Home": "Home",
+      "Account Transfers": "Account Transfers"
     },
     "buttons": {
       "Accept Transfer": "Accept Transfer",
@@ -505,6 +513,7 @@
       "Select All": "Select All",
       "Show less": "Show less",
       "Show more": "Show more",
+      "Signing in...": "Signing in...",
       "Staff": "Staff",
       "Staff Assignment History": "Staff Assignment History",
       "Subledger Account": "Subledger Account",
@@ -865,9 +874,13 @@
       "Password validation": "The password should contain a minimum of {{minchar}} characters, including 1 uppercase, 1 lowercase and a special character and should not include repeated characters or spaces.",
       "Must be at least": "Must be at least",
       "Must be less or equal to": "Must be less or equal to",
-      "must be after or equal to start date": "must be after or equal to start date"
+      "must be after or equal to start date": "must be after or equal to start date",
+      "Yes": "Yes",
+      "No": "No",
+      "No classification data available": "No classification data available"
     },
     "passwordPreferences": {
+      "Password most be at least 1 character and not more that 50 characters long": "Password must be at least 1 character and not more than 50 characters long",
       "Password must be at least 1 character and not more than 50 characters long": "Password must be at least 1 character and not more than 50 characters long",
       "Password must be at least 6 characters, no more than 50 characters long, must include at least one upper case letter, one lower case letter, one numeric digit and no space": "Password must be at least 6 characters, no more than 50 characters long, must include at least one upper case letter, one lower case letter, one numeric digit and no space",
       "Password must be 12 to 50 characters long, containing at least one uppercase letter, one lowercase letter, one numeric digit, and one special character, with no spaces or consecutive repeating characters": "Password must be 12 to 50 characters long, containing at least one uppercase letter, one lowercase letter, one numeric digit, and one special character, with no spaces or consecutive repeating characters"
@@ -945,7 +958,7 @@
       "Configure Maker Checker Tasks": "Configure Maker Checker Tasks",
       "Configure Maker-Checker Tasks": "Configure Maker-Checker Tasks",
       "Customer Attributes": "Customer Attributes",
-      "Configure Mifos Organization Needs": "Following guide tour will help you configure Mifos according to your organization needs.",
+      "Configure Mifos Organization Needs": "Following guide tour will help you configure Mifos® according to your organization needs.",
       "Create Charge": "Create Charge",
       "Create Closure": "Create Closure",
       "Create Code": "Create Code",
@@ -999,6 +1012,14 @@
       "External Services": "External Services",
       "Family Member": "Family Member",
       "Family Members": "Family Members",
+      "Personal Information": "Personal Information",
+      "Entity Details": "Entity Details",
+      "Contact Information": "Contact Information",
+      "Account Information": "Account Information",
+      "Group Membership": "Group Membership",
+      "Classification": "Classification",
+      "Important Dates": "Important Dates",
+      "Status": "Status",
       "Fees to Specific Income Accounts": "Fees to Specific Income Accounts",
       "Filter holidays": "Search bar to filter holidays based on different offices.",
       "Filter reports by name": "Search bar to filter reports by name.",
@@ -1048,7 +1069,7 @@
       "Keyboard Shortcuts": "Keyboard Shortcuts",
       "Last Active": "Last Active",
       "Liabilities": "Liabilities",
-      "List of all codes in the Mifos system": "List of all codes in the Mifos system for your organization.",
+      "List of all codes in the Mifos system": "List of all codes in the Mifos® system for your organization.",
       "List of all currently available data tables": "List of all currently available data tables.",
       "List of all currently available reports": "List of all currently available reports. For more details click",
       "List of all maker checker tasks": "List of all maker checker tasks. For more details click",
@@ -1227,7 +1248,7 @@
       "View Client Signature": "View Client Signature",
       "View Journal Entry": "View Journal Entry",
       "Waive Charge": "Waive Charge",
-      "Welcome to Mifos": "Welcome to Mifos",
+      "Welcome to Mifos": "Welcome to Mifos®",
       "WriteOff reasons to Expense accounts": "WriteOff reasons to Expense accounts",
       "Withdraw Money From Saving Account": "Withdraw Money From Saving Account",
       "Withhold Tax": "Withhold Tax",
@@ -1252,7 +1273,10 @@
       "Not Yet Amortized Amount": "Not Yet Amortized Amount",
       "Adjusted Amount": "Adjusted Amount",
       "Charged Off Amount": "Charged Off Amount",
-      "Date": "Date"
+      "Date": "Date",
+      "Secure & Reliable": "Secure & Reliable",
+      "Community Driven": "Community Driven",
+      "Global Impact": "Global Impact"
     },
     "inputs": {
       "accounting": {
@@ -1262,6 +1286,9 @@
         "INCOME": "INCOME",
         "EXPENSE": "EXPENSE"
       },
+      "Basic": "Basic",
+      "Standard": "Standard",
+      "Strong": "Strong",
       "Percentage is required": "Percentage is required",
       "ACCOUNTING": "ACCOUNTING",
       "ADDRESS": "ADDRESS",
@@ -1463,6 +1490,8 @@
       "Client Screen Reports": "Client Screen Reports",
       "Client Trends": "Client Trends",
       "Client Type": "Client Type",
+      "Client Status": "Client Status",
+      "Sub Status": "Sub Status",
       "Client first name": "Client first name",
       "Client last name": "Client last name",
       "Client middle name": "Client middle name",
@@ -1766,6 +1795,7 @@
       "Gap between Installments": "Gap between Installments:(Min",
       "Gender": "Gender",
       "General": "General",
+      "Personal Data": "Personal Data",
       "Generate Repayment Schedule": "Generate Repayment Schedule",
       "Global Configurations": "Global Configurations",
       "Goodwill credit": "Goodwill credit",
@@ -2740,7 +2770,9 @@
     },
     "placeholders": {
       "Add new server": "Add new server",
-      "Search Activity": "Search Activity"
+      "Search Activity": "Search Activity",
+      "Enter your username": "Enter your username",
+      "Enter your password": "Enter your password"
     },
     "status": {
       "Active": "Active",
@@ -2812,6 +2844,7 @@
       "Add, modify or inactivate a Fixed deposit product": "Add, modify or inactivate a Fixed deposit product",
       "Add, modify or inactivate a Recurring Deposit product": "Add, modify or inactivate a Recurring Deposit product",
       "Address": "Address",
+      "Personal Data": "Personal Data",
       "Adhoc Query": "Adhoc Query",
       "Advance Search": "Advanced Search",
       "Advanced search option for journal entries": "Advanced search option for journal entries",
@@ -2883,7 +2916,7 @@
       "Collection Sheet": "Collection Sheet",
       "Committee": "Committee",
       "Configurations": "Configurations",
-      "Configurations page allows you to further customize": "The Configurations page allows you to further customize the way your organization uses the Mifos system.",
+      "Configurations page allows you to further customize": "The Configurations page allows you to further customize the way your organization uses the Mifos® system.",
       "Configure Maker Checker Tasks": "Configure Maker Checker Tasks",
       "Copy": "Copy",
       "Copy Account Number": "Copy Account Number",
@@ -2997,7 +3030,7 @@
       "deselect": "deselect",
       "Documents": "Documents",
       "Dropdown self service user administrative portal": "Dropdown provides access to self service user administrative portal, app configuration and task management.",
-      "Dropdown system reports": "Dropdown provides access to all types of system reports including the default reports provided by Mifos and system reports that will be developed by the organization.",
+      "Dropdown system reports": "Dropdown provides access to all types of system reports including the default reports provided by Mifos® and system reports that will be developed by the organization.",
       "Easy way to reassign all the loan": "Easy way to reassign all the loan from one LO to another LO",
       "Edit": "Edit",
       "Edit Account Number Preference": "Edit Account Number Preference",
@@ -3072,7 +3105,7 @@
       "Financial Activity Mappings": "Financial Activity Mappings",
       "Filter by name": "Filter by name",
       "FilterByLoanIdOrError": "Filter by loan Id or error",
-      "Fineract": "Fineract",
+      "Fineract": "Apache Fineract®",
       "Fixed Deposit Account Charges": "Fixed Deposit Account Charges",
       "Fixed Deposit Account Interest Rate Chart": "Fixed Deposit Account Interest Rate Chart",
       "Fixed Deposit Account Standing Instructions": "Fixed Deposit Account Standing Instructions",
@@ -3096,7 +3129,7 @@
       "FromAccountId": "From Account Id",
       "FromClientId": "From Client Id",
       "gcm_end_point": "gcm_end_point",
-      "GLAccount Balances Application": "This makes it easier for an organization wanting to move to Mifos to transfer GL account balances (from their existing accounting application or manual system) to Mifos X Accounting.",
+      "GLAccount Balances Application": "This makes it easier for an organization wanting to move to Mifos® to transfer GL account balances (from their existing accounting application or manual system) to Mifos X Accounting.",
       "GSIM Account View": "GSIM Account View",
       "General": "General",
       "Get involved": "Get involved",
@@ -3257,7 +3290,7 @@
       "Manage your Services": "Manage your Services",
       "Manual journal entry transactions recorded in a journal": "Manual journal entry transactions recorded in a journal",
       "Message Gateway": "Message Gateway",
-      "Mifos Initiative": "Mifos Initiative",
+      "Mifos Initiative": "Mifos® Initiative",
       "Mifos X data-tables allow the user to add custom fields": "Mifos X data-tables allow the user to add custom fields in addition to the built-in fields to a client profile, loan/saving account, group, center or an office.",
       "Migrate Opening Balances": "Migrate Opening Balances",
       "Modify Loans Account": "Modify Loans Account",
@@ -3337,7 +3370,7 @@
       "Revert this transaction?": "Are you sure you want to revert this transaction?",
       "row": "row",
       "Roles and Permissions": "Roles and Permissions",
-      "Roles and Permissions allow the administrator to control access": "Roles and Permissions allow the administrator to control access to Mifos based on what roles are assigned to Users and what Permissions are assigned to roles.",
+      "Roles and Permissions allow the administrator to control access": "Roles and Permissions allow the administrator to control access to Mifos® based on what roles are assigned to Users and what Permissions are assigned to roles.",
       "S3 Amazon Service Configuration": "S3 Amazon Service Configuration",
       "SMS": "SMS",
       "SMS Campaigns": "SMS Campaigns",
@@ -3660,7 +3693,7 @@
     "Delete Standing Instruction": "Delete Standing Instruction",
     "Deposit": "Deposit",
     "Description is used to provide additional information regarding the purpose": "The description is used to provide additional information regarding the purpose and characteristics of the recurring deposit product.",
-    "Due to regulatory requirements in some countries": "Due to regulatory requirements in some countries, the loans cannot exceed X days, the Fineract SOR needs to be extended to support defining that a loan has a maximum length and the maximum length of that loan defines the length of the last installment which will be a shorter period than the first installments.",
+    "Due to regulatory requirements in some countries": "Due to regulatory requirements in some countries, the loans cannot exceed X days, the Apache Fineract® SOR needs to be extended to support defining that a loan has a maximum length and the maximum length of that loan defines the length of the last installment which will be a shorter period than the first installments.",
     "Disabled": "Disabled",
     "Disburse": "Disburse",
     "Edit": "Edit",

@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "Mifos X",
+  "APP_NAME": "Mifos® X WebApp",
   "Logged in as": "को रूपमा लग इन गरियो",
   "Remember me": "मलाई सम्झनुहोस्",
   "errors": {
@@ -81,6 +81,7 @@
     "validation.msg.loan.principal.is.greater.than.max": "मूल रकम {{params[0].value}} अमान्य छ। अधिकतम मूल रकम {{params[1].value}} भन्दा कम वा बराबरको रकम हुनुपर्छ।",
     "validation.msg.loan.principal.is.less.than.min": "मूल रकम {{params[0].value}} अमान्य छ। न्यूनतम प्रिन्सिपल रकम {{params[1].value}} भन्दा बढी वा बराबरको रकम हुनुपर्छ।",
     "validation.msg.loanproduct.accountingType.cannot.be.blank": "लेखा प्रकार अनिवार्य छ।",
+    "labels.commons.Only up to 6 decimal places allowed": "अधिकतम ६ दशमलव स्थानहरू मात्र अनुमति छ।",
     "validation.msg.loanproduct.accountingType.is.not.within.expected.range": "लेखा प्रकार अमान्य छ। समावेशी {{params[1].value}} र {{params[2].value}} बीचको संख्या हुनुपर्छ।",
     "validation.msg.loanproduct.allowPartialPeriodInterestCalculation.not.supported.for.daily.calculations": "अनुमति दिनुहोस् आंशिक किस्ता गणना दैनिक गणनाको लागि सत्यको रूपमा सेट गर्न सकिँदैन",
     "validation.msg.loanproduct.allowVariableInstallments.not.supported.for.selected.interest.calculation.type": "चर किस्ता दैनिक ब्याज गणनाको साथ प्रयोग गरिनु पर्छ वा आंशिक ब्याज गणनालाई अनुमति दिनुपर्छ।",
@@ -283,6 +284,12 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "निकासी शुल्क अवधि प्रकार अनिवार्य छ।"
   },
   "labels": {
+    "version": {
+      "Tenant": "भाडामा लिने व्यक्ति",
+      "Mifos WebApp": "Mifos® WebApp",
+      "Apache Fineract": "Apache Fineract®",
+      "Server": "सर्भर"
+    },
     "accounting": {
       "Accrual (periodic)": "उपार्जन (आवधिक)",
       "Accrual (upfront)": "उपार्जन (अगाडि)",
@@ -299,7 +306,8 @@
       }
     },
     "breadcrumbs": {
-      "Home": "घर"
+      "Home": "घर",
+      "Account Transfers": "खाता स्थानान्तरण"
     },
     "buttons": {
       "Accept Transfer": "स्थानान्तरण स्वीकार गर्नुहोस्",
@@ -504,6 +512,7 @@
       "Select All": "सबै छान्नु",
       "Show more": "थप देखाउनुहोस्",
       "Show less": "कम देखाउनुहोस्",
+      "Signing in...": "साइन इन गर्दै",
       "Staff": "कर्मचारी",
       "Staff Assignment History": "कर्मचारी असाइनमेन्ट इतिहास",
       "Subledger Account": "Subledger खाता",
@@ -853,9 +862,13 @@
       "Password validation": "पासवर्डमा कम्तिमा १२ क्यारेक्टरहरू हुनुपर्छ, जसमा १ अपरकेस, लोअरकेस र स्पेशल क्यारेक्टरहरू हुनुपर्छ र दोहोरिएका क्यारेक्टरहरू वा सेतो-स्पेसहरू समावेश हुनु हुँदैन।",
       "Must be at least": "कम्तिमा हुनुपर्छ",
       "Must be less or equal to": "कम वा बराबर हुनुपर्छ",
-      "must be after or equal to start date": "सुरु मिति पछि वा बराबर हुनुपर्छ"
+      "must be after or equal to start date": "सुरु मिति पछि वा बराबर हुनुपर्छ",
+      "No classification data available": "कुनै वर्गीकरण डाटा उपलब्ध छैन",
+      "No": "छैन",
+      "Yes": "हो"
     },
     "passwordPreferences": {
+      "Password most be at least 1 character and not more that 50 characters long": "पासवर्ड कम्तिमा १ क्यारेक्टर र ५० क्यारेक्टरभन्दा बढी नहुने हुनुपर्छ",
       "Password must be at least 1 character and not more than 50 characters long": "पासवर्ड कम्तिमा १ क्यारेक्टर र ५० क्यारेक्टरभन्दा बढी नहुने हुनुपर्छ",
       "Password must be at least 6 characters, no more than 50 characters long, must include at least one upper case letter, one lower case letter, one numeric digit and no space": "पासवर्ड कम्तिमा ६ क्यारेक्टर, ५० क्यारेक्टरभन्दा बढी नहुने, कम्तिमा एक अपरकेस अक्षर, एक लोअरकेस अक्षर, एक संख्यात्मक अंक र कुनै खाली ठाउँ नहुने हुनुपर्छ",
       "Password must be 12 to 50 characters long, containing at least one uppercase letter, one lowercase letter, one numeric digit, and one special character, with no spaces or consecutive repeating characters": "पासवर्ड १२ देखि ५० क्यारेक्टर लामो हुनुपर्छ, जसमा कम्तिमा एक अपरकेस अक्षर, एक लोअरकेस अक्षर, एक संख्यात्मक अंक, र एक विशेष क्यारेक्टर हुनुपर्छ, कुनै खाली ठाउँ वा लगातार दोहोरिएका क्यारेक्टरहरू नहुने"
@@ -938,7 +951,7 @@
       "Configure Maker Checker Tasks": "मेकर जाँचकर्ता कार्यहरू कन्फिगर गर्नुहोस्",
       "Configure Maker-Checker Tasks": "मेकर-चेकर कार्यहरू कन्फिगर गर्नुहोस्",
       "Customer Attributes": "ग्राहक विशेषताहरू",
-      "Configure Mifos Organization Needs": "निम्न गाईड टूरले तपाइँलाई तपाइँको संगठन आवश्यकता अनुसार Mifos कन्फिगर गर्न मद्दत गर्नेछ।",
+      "Configure Mifos Organization Needs": "निम्न गाईड टूरले तपाइँलाई तपाइँको संगठन आवश्यकता अनुसार Mifos® कन्फिगर गर्न मद्दत गर्नेछ।",
       "Create Charge": "चार्ज सिर्जना गर्नुहोस्",
       "Create Closure": "बन्द सिर्जना गर्नुहोस्",
       "Create Code": "कोड सिर्जना गर्नुहोस्",
@@ -1041,7 +1054,7 @@
       "Keyboard Shortcuts": "किबोर्ड सर्टकटहरू",
       "Last Active": "पछिल्लो सक्रिय",
       "Liabilities": "दायित्वहरू",
-      "List of all codes in the Mifos system": "तपाईंको संगठनको लागि Mifos प्रणालीमा सबै कोडहरूको सूची।",
+      "List of all codes in the Mifos system": "तपाईंको संगठनको लागि Mifos® प्रणालीमा सबै कोडहरूको सूची।",
       "List of all currently available data tables": "सबै हाल उपलब्ध डाटा तालिकाहरूको सूची।",
       "List of all currently available reports": "सबै हाल उपलब्ध रिपोर्टहरूको सूची। थप विवरणहरूको लागि क्लिक गर्नुहोस्",
       "List of all maker checker tasks": "सबै निर्माता परीक्षक कार्यहरूको सूची। थप विवरणहरूको लागि क्लिक गर्नुहोस्",
@@ -1221,7 +1234,7 @@
       "View Client Signature": "ग्राहक हस्ताक्षर हेर्नुहोस्",
       "View Journal Entry": "जर्नल प्रविष्टि हेर्नुहोस्",
       "Waive Charge": "शुल्क छुट",
-      "Welcome to Mifos": "Mifos मा स्वागत छ",
+      "Welcome to Mifos": "Mifos® मा स्वागत छ",
       "WriteOff reasons to Expense accounts": "खर्च खाताहरूमा कारणहरू लेख्नुहोस्",
       "Withdraw Money From Saving Account": "बचत खाताबाट पैसा निकाल्नुहोस्",
       "Withhold Tax": "कर रोक",
@@ -1246,7 +1259,18 @@
       "Not Yet Amortized Amount": "Not Yet Amortized Amount",
       "Adjusted Amount": "समायोजित रकम",
       "Charged Off Amount": "चार्ज गरिएको रकम",
-      "Date": "मिति"
+      "Date": "मिति",
+      "Secure & Reliable": "सुरक्षित र भरपर्दो",
+      "Community Driven": "समुदाय संचालित",
+      "Global Impact": "विश्वव्यापी प्रभाव",
+      "Personal Information": "व्यक्तिगत जानकारी",
+      "Account Information": "खाता जानकारी",
+      "Entity Details": "संस्था विवरण",
+      "Group Membership": "समूह सदस्यता",
+      "Important Dates": "महत्वपूर्ण मितिहरू",
+      "Contact Information": "सम्पर्क जानकारी",
+      "Classification": "वर्गीकरण",
+      "Status": "स्थिति"
     },
     "inputs": {
       "accounting": {
@@ -1256,6 +1280,9 @@
         "INCOME": "आय",
         "EXPENSE": "खर्च"
       },
+      "Basic": "आधारभूत",
+      "Standard": "मानक",
+      "Strong": "बलियो",
       "Percentage is required": "प्रतिशत आवश्यक छ",
       "ACCOUNTING": "लेखा",
       "ADDRESS": "ठेगाना",
@@ -1455,6 +1482,8 @@
       "Client Principal Loan": "ग्राहक प्रिन्सिपल ऋण",
       "Create standing instructions at disbursement": "वितरणमा खडा निर्देशनहरू सिर्जना गर्नुहोस्",
       "Client Screen Reports": "ग्राहक स्क्रिन रिपोर्टहरू",
+      "CLIENT STATUS": "ग्राहक स्थिति",
+      "Client Status": "ग्राहक स्थिति",
       "Client Trends": "ग्राहक प्रवृत्ति",
       "Client Type": "ग्राहक प्रकार",
       "Client first name": "ग्राहकको पहिलो नाम",
@@ -2167,6 +2196,7 @@
       "Amount Range From": "बाट रकम दायरा",
       "Amount Range To": "रकम दायरा",
       "Person": "व्यक्ति",
+      "Personal Data": "व्यक्तिगत डाटा",
       "Phone Number": "फोन नम्बर",
       "Place Guarantee Funds On-Hold": "ग्यारेन्टी कोष अन-होल्ड राख्नुहोस्",
       "Port": "पोर्ट",
@@ -2726,7 +2756,9 @@
     },
     "placeholders": {
       "Add new server": "नयाँ सर्भर थप्नुहोस्",
-      "Search Activity": "खोज गतिविधि"
+      "Search Activity": "खोज गतिविधि",
+      "Enter your username": "आफ्नो प्रयोगकर्ता नाम प्रविष्ट गर्नुहोस्",
+      "Enter your password": "आफ्नो पासवर्ड प्रविष्ट गर्नुहोस्"
     },
     "status": {
       "Active": "सक्रिय",
@@ -2798,6 +2830,7 @@
       "Add, modify or inactivate a Fixed deposit product": "फिक्स्ड डिपोजिट उत्पादन थप्नुहोस्, परिमार्जन गर्नुहोस् वा निष्क्रिय गर्नुहोस्",
       "Add, modify or inactivate a Recurring Deposit product": "पुनरावर्ती जम्मा उत्पादन थप्नुहोस्, परिमार्जन गर्नुहोस् वा निष्क्रिय गर्नुहोस्",
       "Address": "ठेगाना",
+      "Personal Data": "व्यक्तिगत डाटा",
       "Adhoc Query": "तदर्थ प्रश्न",
       "Advance Search": "उन्नत खोज",
       "Advanced search option for journal entries": "जर्नल प्रविष्टिहरूको लागि उन्नत खोज विकल्प",
@@ -3058,7 +3091,7 @@
       "Financial Activity Mappings": "वित्तीय गतिविधि म्यापिङ",
       "Filter by name": "नाम द्वारा फिल्टर फिल्टर",
       "FilterByLoanIdOrError": "ऋण आईडी वा त्रुटि द्वारा फिल्टर गर्नुहोस्",
-      "Fineract": "Fineract",
+      "Fineract": "Apache Fineract®",
       "Fixed Deposit Account Charges": "फिक्स्ड डिपोजिट खाता शुल्कहरू",
       "Fixed Deposit Account Interest Rate Chart": "फिक्स्ड डिपोजिट खाता ब्याज दर चार्ट",
       "Fixed Deposit Account Standing Instructions": "फिक्स्ड डिपोजिट खाता स्थायी निर्देशनहरू",
@@ -3159,7 +3192,7 @@
       "Manage your Services": "आफ्नो सेवाहरू प्रबन्ध गर्नुहोस्",
       "Manual journal entry transactions recorded in a journal": "जर्नलमा रेकर्ड गरिएको म्यानुअल जर्नल प्रविष्टि लेनदेन",
       "Message Gateway": "सन्देश गेटवे",
-      "Mifos Initiative": "Mifos पहल",
+      "Mifos Initiative": "Mifos® पहल",
       "Mifos X data-tables allow the user to add custom fields": "Mifos X डाटा-टेबलहरूले प्रयोगकर्तालाई ग्राहक प्रोफाइल, ऋण/बचत खाता, समूह, केन्द्र वा कार्यालयमा निर्मित क्षेत्रहरू बाहेक अनुकूलन क्षेत्रहरू थप्न अनुमति दिन्छ।",
       "Migrate Opening Balances": "ओप्रवाहको ब्यालेन्स सारियो",
       "Modify Loans Account": "ऋण खाता परिमार्जन गर्नुहोस्",

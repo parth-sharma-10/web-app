@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { ApplicationRef, Injectable, inject } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 
@@ -41,8 +49,10 @@ export class ThemingService {
     this.darkModeOn = isDarkMode;
     if (isDarkMode) {
       document.body.classList.add('dark-theme');
+      document.body.classList.remove('light-theme');
       this.theme.next('dark-theme');
     } else {
+      document.body.classList.add('light-theme');
       document.body.classList.remove('dark-theme');
       this.theme.next('light-theme');
     }

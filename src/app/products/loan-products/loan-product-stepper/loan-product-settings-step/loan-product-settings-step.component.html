@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <form [formGroup]="loanProductSettingsForm">
   <div class="layout-row-wrap gap-2percent responsive-column align-start-center">
     <mat-form-field class="flex-30">
@@ -252,12 +260,12 @@
 
     <mat-form-field class="flex-48">
       <mat-label>{{ 'labels.inputs.Grace on principal payment' | translate }}</mat-label>
-      <input type="number" matInput formControlName="graceOnPrincipalPayment" />
+      <input type="number" min="0" matInput formControlName="graceOnPrincipalPayment" />
     </mat-form-field>
 
     <mat-form-field class="flex-48">
       <mat-label>{{ 'labels.inputs.Grace on interest payment' | translate }}</mat-label>
-      <input type="number" matInput formControlName="graceOnInterestPayment" />
+      <input type="number" min="0" matInput formControlName="graceOnInterestPayment" />
     </mat-form-field>
 
     <mat-divider class="flex-98"></mat-divider>
@@ -290,6 +298,7 @@
       <mat-label>{{ 'labels.inputs.Interest free period' | translate }}</mat-label>
       <input
         type="number"
+        min="0"
         matInput
         matTooltip="{{ 'tooltips.If the Interest Free Period' | translate }}"
         formControlName="graceOnInterestCharged"
@@ -300,6 +309,7 @@
       <mat-label>{{ 'labels.inputs.Arrears tolerance' | translate }}</mat-label>
       <input
         type="number"
+        min="0"
         matInput
         matTooltip="{{ 'tooltips.With Arrears tolerance' | translate }}"
         formControlName="inArrearsTolerance"
@@ -374,7 +384,7 @@
 
     <mat-form-field class="flex-48">
       <mat-label>{{ 'labels.inputs.On arrears ageing' | translate }}</mat-label>
-      <input type="number" matInput formControlName="graceOnArrearsAgeing" />
+      <input type="number" min="0" matInput formControlName="graceOnArrearsAgeing" />
     </mat-form-field>
 
     <h4 class="flex-48">
@@ -390,7 +400,7 @@
 
     <mat-form-field class="flex-48">
       <mat-label>{{ 'labels.inputs.Overdue days for NPA' | translate }}</mat-label>
-      <input type="number" matInput formControlName="overdueDaysForNPA" />
+      <input type="number" min="0" matInput formControlName="overdueDaysForNPA" />
     </mat-form-field>
 
     <mat-checkbox
@@ -403,7 +413,7 @@
 
     <mat-form-field class="flex-48">
       <mat-label>{{ 'labels.inputs.Principal Threshold (%) for Last Instalment' | translate }}</mat-label>
-      <input type="number" matInput formControlName="principalThresholdForLastInstallment" />
+      <input type="number" min="0" matInput formControlName="principalThresholdForLastInstallment" />
     </mat-form-field>
 
     <mat-checkbox
@@ -750,6 +760,7 @@
           <mat-label>{{ 'labels.inputs.Due days for repayment event' | translate }}</mat-label>
           <input
             type="number"
+            min="0"
             matInput
             matTooltip="{{ 'tooltips.Maximum outstanding loan account balance' | translate }}"
             formControlName="dueDaysForRepaymentEvent"
@@ -759,6 +770,7 @@
           <mat-label>{{ 'labels.inputs.OverDue days for repayment event' | translate }}</mat-label>
           <input
             type="number"
+            min="0"
             matInput
             matTooltip="{{ 'tooltips.Maximum outstanding loan account balance' | translate }}"
             formControlName="overDueDaysForRepaymentEvent"

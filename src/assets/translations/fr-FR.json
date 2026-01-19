@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "Mifos X",
+  "APP_NAME": "Mifos® X WebApp",
   "Logged in as": "connecté en tant que",
   "Remember me": "Souviens-toi de moi",
   "errors": {
@@ -81,6 +81,7 @@
     "validation.msg.loan.principal.is.greater.than.max": "Le montant principal {{params[0].value}} n'est pas valide. Doit être un montant inférieur ou égal au montant principal maximum {{params[1].value}}.",
     "validation.msg.loan.principal.is.less.than.min": "Le montant principal {{params[0].value}} n'est pas valide. Doit être un montant supérieur ou égal au montant principal minimum {{params[1].value}}.",
     "validation.msg.loanproduct.accountingType.cannot.be.blank": "Le type de comptabilité est obligatoire.",
+    "labels.commons.Only up to 6 decimal places allowed": "Jusqu'à 6 décimales autorisées.",
     "validation.msg.loanproduct.accountingType.is.not.within.expected.range": "Le type de comptabilité n'est pas valide. Doit être un nombre compris entre {{params[1].value}} et {{params[2].value}} inclus.",
     "validation.msg.loanproduct.allowPartialPeriodInterestCalculation.not.supported.for.daily.calculations": "Autoriser le calcul des versements partiels ne peut pas être défini comme vrai pour le calcul quotidien",
     "validation.msg.loanproduct.allowVariableInstallments.not.supported.for.selected.interest.calculation.type": "Le versement variable doit être utilisé avec le calcul des intérêts quotidiens ou permettre le calcul des intérêts partiels.",
@@ -283,6 +284,12 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "Le type de période de frais de retrait est obligatoire."
   },
   "labels": {
+    "version": {
+      "Tenant": "Locataire",
+      "Mifos WebApp": "Mifos® WebApp",
+      "Apache Fineract": "Apache Fineract®",
+      "Server": "Serveur"
+    },
     "accounting": {
       "Accrual (periodic)": "Accumulation (périodique)",
       "Accrual (upfront)": "Accumulation (d'avance)",
@@ -299,7 +306,8 @@
       }
     },
     "breadcrumbs": {
-      "Home": "Maison"
+      "Home": "Maison",
+      "Account Transfers": "Virements de compte"
     },
     "buttons": {
       "Accept Transfer": "Accepter le transfert",
@@ -504,6 +512,7 @@
       "Select All": "Tout sélectionner",
       "Show more": "Montre plus",
       "Show less": "Montrer moins",
+      "Signing in...": "Connexion",
       "Staff": "Personnel",
       "Staff Assignment History": "Historique des affectations du personnel",
       "Subledger Account": "Compte auxiliaire",
@@ -855,9 +864,13 @@
       "Password validation": "Le mot de passe doit contenir au minimum {{minchar}} caractères, dont 1 majuscule, 1 minuscule et un caractère spécial et ne doit pas être composé de caractères répétés ou d'espaces blancs.",
       "Must be at least": "Doit être au moins",
       "Must be less or equal to": "Doit être inférieur ou égal à",
-      "must be after or equal to start date": "doit être postérieure ou égale à la date de début"
+      "must be after or equal to start date": "doit être postérieure ou égale à la date de début",
+      "No classification data available": "Aucune donnée de classification disponible",
+      "No": "Non",
+      "Yes": "Oui"
     },
     "passwordPreferences": {
+      "Password most be at least 1 character and not more that 50 characters long": "Le mot de passe doit contenir au moins 1 caractère et pas plus de 50 caractères",
       "Password must be at least 1 character and not more than 50 characters long": "Le mot de passe doit contenir au moins 1 caractère et pas plus de 50 caractères",
       "Password must be at least 6 characters, no more than 50 characters long, must include at least one upper case letter, one lower case letter, one numeric digit and no space": "Le mot de passe doit contenir au moins 6 caractères, pas plus de 50 caractères, doit inclure au moins une lettre majuscule, une lettre minuscule, un chiffre et aucun espace",
       "Password must be 12 to 50 characters long, containing at least one uppercase letter, one lowercase letter, one numeric digit, and one special character, with no spaces or consecutive repeating characters": "Le mot de passe doit contenir entre 12 et 50 caractères, incluant au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial, sans espaces ni caractères répétés consécutifs"
@@ -940,7 +953,7 @@
       "Configure Maker Checker Tasks": "Configurer les tâches de Maker Checker",
       "Configure Maker-Checker Tasks": "Configurer les tâches Maker-Checker",
       "Customer Attributes": "Attributs du client",
-      "Configure Mifos Organization Needs": "La visite guidée suivante vous aidera à configurer Mifos en fonction des besoins de votre organisation.",
+      "Configure Mifos Organization Needs": "La visite guidée suivante vous aidera à configurer Mifos® en fonction des besoins de votre organisation.",
       "Create Charge": "Créer des frais",
       "Create Closure": "Créer une fermeture",
       "Create Code": "Créer du code",
@@ -1043,7 +1056,7 @@
       "Keyboard Shortcuts": "Raccourcis clavier",
       "Last Active": "Dernier actif",
       "Liabilities": "Passifs",
-      "List of all codes in the Mifos system": "Liste de tous les codes du système Mifos pour votre organisation.",
+      "List of all codes in the Mifos system": "Liste de tous les codes du système Mifos® pour votre organisation.",
       "List of all currently available data tables": "Liste de tous les tableaux de données actuellement disponibles.",
       "List of all currently available reports": "Liste de tous les rapports actuellement disponibles. Pour plus de détails cliquez",
       "List of all maker checker tasks": "Liste de toutes les tâches du vérificateur de créateur. Pour plus de détails cliquez",
@@ -1223,7 +1236,7 @@
       "View Client Signature": "Afficher la signature du client",
       "View Journal Entry": "Afficher l'écriture de journal",
       "Waive Charge": "Renoncer aux frais",
-      "Welcome to Mifos": "Bienvenue chez Mifos",
+      "Welcome to Mifos": "Bienvenue chez Mifos®",
       "WriteOff reasons to Expense accounts": "Raisons de radiation des comptes de dépenses",
       "Withdraw Money From Saving Account": "Retirer de l'argent d'un compte d'épargne",
       "Withhold Tax": "Retenir l'impôt",
@@ -1248,7 +1261,18 @@
       "Not Yet Amortized Amount": "Montant pas encore amorti",
       "Adjusted Amount": "Montant ajusté",
       "Charged Off Amount": "Montant radié",
-      "Date": "Date"
+      "Date": "Date",
+      "Secure & Reliable": "Sécurisé et fiable",
+      "Community Driven": "Axé sur la communauté",
+      "Global Impact": "Impact mondial",
+      "Personal Information": "Informations personnelles",
+      "Account Information": "Informations sur le compte",
+      "Entity Details": "D\u00e9tails de l'entit\u00e9",
+      "Group Membership": "Adh\u00e9sion au groupe",
+      "Important Dates": "Dates importantes",
+      "Contact Information": "Coordonn\u00e9es",
+      "Classification": "Classification",
+      "Status": "Statut"
     },
     "inputs": {
       "accounting": {
@@ -1258,6 +1282,9 @@
         "INCOME": "REVENU",
         "EXPENSE": "FRAIS"
       },
+      "Basic": "Basique",
+      "Standard": "Standard",
+      "Strong": "Fort",
       "Percentage is required": "Le pourcentage est requis",
       "ACCOUNTING": "COMPTABILITÉ",
       "ADDRESS": "ADRESSE",
@@ -1457,6 +1484,8 @@
       "Client Principal Loan": "Prêt principal du client",
       "Create standing instructions at disbursement": "Créer des instructions debout au décaissement",
       "Client Screen Reports": "Rapports d'écran client",
+      "CLIENT STATUS": "STATUT DU CLIENT",
+      "Client Status": "Statut du client",
       "Client Trends": "Tendances des clients",
       "Client Type": "Type de client",
       "Client first name": "Prénom du client",
@@ -2169,6 +2198,7 @@
       "Amount Range From": "Fourchette de montant",
       "Amount Range To": "Fourchette de montant à",
       "Person": "Personne",
+      "Personal Data": "Données personnelles",
       "Phone Number": "Numéro de téléphone",
       "Place Guarantee Funds On-Hold": "Mettre les fonds de garantie en attente",
       "Port": "Port",
@@ -2728,7 +2758,9 @@
     },
     "placeholders": {
       "Add new server": "Ajouter un nouveau serveur",
-      "Search Activity": "Activité de recherche"
+      "Search Activity": "Activité de recherche",
+      "Enter your username": "Saisissez votre nom d'utilisateur",
+      "Enter your password": "Saisissez votre mot de passe"
     },
     "status": {
       "Active": "Actif",
@@ -2800,6 +2832,7 @@
       "Add, modify or inactivate a Fixed deposit product": "Ajouter, modifier ou désactiver un produit de dépôt fixe",
       "Add, modify or inactivate a Recurring Deposit product": "Ajouter, modifier ou désactiver un produit de dépôt récurrent",
       "Address": "Adresse",
+      "Personal Data": "Données personnelles",
       "Adhoc Query": "Requête ad hoc",
       "Advance Search": "Recherche Avancée",
       "Advanced search option for journal entries": "Option de recherche avancée pour les entrées de journal",
@@ -2916,7 +2949,6 @@
       "Create Recurring Deposits Account": "Créer un compte de dépôts récurrents",
       "Create Report": "Creer un rapport",
       "Create SMS Campaign": "Créer une campagne SMS",
-      "Create Savings Product": "Créer un produit d'épargne",
       "Create Savings Account": "Créer un compte d'épargne",
       "Create Self Service User": "Créer un utilisateur libre-service",
       "Create Share Product": "Créer un produit partagé",
@@ -3062,7 +3094,7 @@
       "Fixed Deposit Account Charges": "Frais de compte de dépôt fixe",
       "Filter by name": "Filtre par nom",
       "FilterByLoanIdOrError": "Filtrer par ID de prêt ou erreur",
-      "Fineract": "Fineact",
+      "Fineract": "Apache Fineract®",
       "Fixed Deposit Account Interest Rate Chart": "Tableau des taux d’intérêt des comptes de dépôt fixe",
       "Fixed Deposit Account Standing Instructions": "Instructions permanentes pour les comptes de dépôt à terme",
       "Fixed Deposit Account Transactions": "Opérations sur compte de dépôt fixe",
@@ -3161,7 +3193,7 @@
       "Manage your Services": "Gérez vos services",
       "Manual journal entry transactions recorded in a journal": "Opérations d'écriture de journal manuelle enregistrées dans un journal",
       "Message Gateway": "Passerelle de messages",
-      "Mifos Initiative": "Initiative Mifos",
+      "Mifos Initiative": "Initiative Mifos®",
       "Mifos X data-tables allow the user to add custom fields": "Les tables de données Mifos X permettent à l'utilisateur d'ajouter des champs personnalisés en plus des champs intégrés à un profil client, un compte de prêt/épargne, un groupe, un centre ou un bureau.",
       "Migrate Opening Balances": "Migrer les soldes d'ouverture",
       "Modify Loans Account": "Modifier le compte de prêts",

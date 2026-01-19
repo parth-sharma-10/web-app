@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <form [formGroup]="loanProductTermsForm">
   <div class="layout-row-wrap gap-2px responsive-column">
     <h4 class="mat-h4 flex-98">
@@ -159,9 +167,12 @@
             [min]="0"
             [attr.disabled]="isZeroInterest()"
           />
-          <mat-error>
+          <mat-error *ngIf="loanProductTermsForm.get('minInterestRatePerPeriod')?.hasError('min')">
             {{ 'labels.commons.Minimum Value must be' | translate }}
-            <strong>{{ 'labels.commons.greater equal to than 0' | translate }}</strong>
+            <strong>0</strong>
+          </mat-error>
+          <mat-error *ngIf="loanProductTermsForm.get('minInterestRatePerPeriod')?.hasError('pattern')">
+            {{ 'labels.commons.Only up to 6 decimal places allowed' | translate }}
           </mat-error>
         </mat-form-field>
         <mat-form-field class="flex-fill flex-23">
@@ -171,12 +182,20 @@
             matInput
             formControlName="interestRatePerPeriod"
             required
+            [min]="0"
             [attr.disabled]="isZeroInterest()"
           />
-          <mat-error>
+          <mat-error *ngIf="loanProductTermsForm.get('interestRatePerPeriod')?.hasError('required')">
+            {{ 'labels.catalogs.Default' | translate }} {{ 'labels.inputs.Nominal interest rate' | translate }}
+            <span class="text-danger">{{ 'labels.commons.is required' | translate }}</span>
+          </mat-error>
+          <mat-error *ngIf="loanProductTermsForm.get('interestRatePerPeriod')?.hasError('min')">
             {{ 'labels.catalogs.Default' | translate }} {{ 'labels.inputs.Nominal interest rate' | translate }}
             {{ 'labels.commons.is' | translate }}
-            <strong>{{ 'labels.commons.required' | translate }}</strong>
+            <strong>0</strong>
+          </mat-error>
+          <mat-error *ngIf="loanProductTermsForm.get('interestRatePerPeriod')?.hasError('pattern')">
+            {{ 'labels.commons.Only up to 6 decimal places allowed' | translate }}
           </mat-error>
         </mat-form-field>
         <mat-form-field class="flex-fill flex-23">
@@ -188,11 +207,17 @@
             [min]="0"
             [attr.disabled]="isZeroInterest()"
           />
-          <mat-error>
+          <mat-error *ngIf="loanProductTermsForm.get('maxInterestRatePerPeriod')?.hasError('min')">
+            {{ 'labels.commons.Minimum Value must be' | translate }}
+            <strong>0</strong>
+          </mat-error>
+          <mat-error *ngIf="loanProductTermsForm.errors?.['maxLessThanMin']">
             {{ 'labels.commons.Maximum Value must be' | translate }}
-            <strong>{{ 'labels.commons.greater equal to than 0' | translate }}</strong>
-            {{ 'labels.commons.and must be greater than' | translate }}
-            <strong>{{ 'labels.commons.Minimum Principal' | translate }}</strong>
+            <strong>{{ 'labels.commons.greater equal to than' | translate }}</strong>
+            {{ 'labels.inputs.Minimum' | translate }}
+          </mat-error>
+          <mat-error *ngIf="loanProductTermsForm.get('maxInterestRatePerPeriod')?.hasError('pattern')">
+            {{ 'labels.commons.Only up to 6 decimal places allowed' | translate }}
           </mat-error>
         </mat-form-field>
         <mat-form-field class="flex-fill flex-23">
@@ -510,7 +535,7 @@
 
     <mat-form-field class="flex-30">
       <mat-label>{{ 'labels.inputs.Frequency' | translate }}</mat-label>
-      <input type="number" matInput formControlName="repaymentEvery" required />
+      <input type="number" min="1" matInput formControlName="repaymentEvery" required />
       <mat-error>
         {{ 'labels.inputs.Repaid every' | translate }} {{ 'labels.inputs.Frequency' | translate }}
         {{ 'labels.commons.is' | translate }}
@@ -559,7 +584,7 @@
 
     <mat-form-field class="flex-48">
       <mat-label>{{ 'labels.inputs.Minimum days between disbursal and first repayment date' | translate }}</mat-label>
-      <input type="number" matInput formControlName="minimumDaysBetweenDisbursalAndFirstRepayment" />
+      <input type="number" min="0" matInput formControlName="minimumDaysBetweenDisbursalAndFirstRepayment" />
     </mat-form-field>
   </div>
 

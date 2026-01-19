@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <div class="container">
   <mat-card>
     <div #currencyFormRef class="currency-form-container">
@@ -70,7 +78,7 @@
   <h4>{{ 'labels.heading.Add Currency Form' | translate }}</h4>
   <p class="mw400">
     {{ 'labels.text.Used to add currency' | translate }}:
-    <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67141734/Currency+Configuration" target="_blank">{{
+    <a [href]="'currencyConfiguration' | documentationLink" target="_blank" rel="noopener noreferrer">{{
       'labels.inputs.Currency Configuration' | translate
     }}</a>
   </p>

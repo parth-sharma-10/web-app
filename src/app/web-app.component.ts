@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 /* eslint-disable @angular-eslint/prefer-inject */
 /** Angular Imports */
 import { Component, OnInit, HostListener, HostBinding, OnDestroy } from '@angular/core';
@@ -22,6 +30,7 @@ import { ThemeStorageService } from './shared/theme-picker/theme-storage.service
 import { AlertService } from './core/alert/alert.service';
 import { AuthenticationService } from './core/authentication/authentication.service';
 import { SettingsService } from './settings/settings.service';
+import { DocumentationLinksService } from 'app/shared/services/documentation-links.service';
 import { IdleTimeoutService } from './home/timeout-dialog/idle-timeout.service';
 import { SessionTimeoutDialogComponent } from './home/timeout-dialog/session-timeout-dialog.component';
 
@@ -121,7 +130,8 @@ export class WebAppComponent implements OnInit, OnDestroy {
     private themingService: ThemingService,
     private dateUtils: Dates,
     private idle: IdleTimeoutService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private documentationLinks: DocumentationLinksService
   ) {}
 
   @HostBinding('class') public cssClass: string;
@@ -264,7 +274,7 @@ export class WebAppComponent implements OnInit, OnDestroy {
   }
 
   help() {
-    window.open('https://mifosforge.jira.com/wiki/spaces/docs/pages/52035622/User+Manual', '_blank');
+    this.documentationLinks.open('userManual');
   }
 
   // Monitor all keyboard events and excute keyboard shortcuts

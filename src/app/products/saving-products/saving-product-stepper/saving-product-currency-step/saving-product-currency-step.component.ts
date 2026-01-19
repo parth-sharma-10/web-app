@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { Component, OnInit, Input, inject } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltip } from '@angular/material/tooltip';
@@ -50,9 +58,18 @@ export class SavingProductCurrencyStepComponent implements OnInit {
       ],
       digitsAfterDecimal: [
         '',
-        Validators.required
+        [
+          Validators.required,
+          Validators.min(0)
+        ]
       ],
-      inMultiplesOf: ['']
+      inMultiplesOf: [
+        '',
+        [
+          Validators.required,
+          Validators.min(1)
+        ]
+      ]
     });
   }
 

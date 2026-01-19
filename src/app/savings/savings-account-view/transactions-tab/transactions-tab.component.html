@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <div class="container">
   <div class="mat-elevation-z1 m-b-25" [hidden]="!accountWithTransactions">
     <div class="layout-row align-end">
@@ -121,7 +129,7 @@
         <th mat-header-cell class="center" *matHeaderCellDef>{{ 'labels.inputs.Actions' | translate }}</th>
         <td mat-cell class="center" *matCellDef="let transaction">
           <button mat-icon-button [matMenuTriggerFor]="transactionMenu" aria-label="" class="action-button">
-            <mat-icon>{{ 'labels.text.more_vert' | translate }}</mat-icon>
+            <mat-icon>more_vert</mat-icon>
           </button>
           <mat-menu #transactionMenu="matMenu">
             <button mat-menu-item (click)="showTransactions(transaction)">

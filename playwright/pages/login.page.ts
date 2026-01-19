@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { Page, Locator, expect } from '@playwright/test';
 import { BasePage } from './BasePage';
 
@@ -33,10 +41,10 @@ export class LoginPage extends BasePage {
 
   /**
    * Get the username input field.
-   * Uses codegen selector for the actual input.
+   * Uses formcontrolname attribute for reliable selection.
    */
   get usernameInput(): Locator {
-    return this.page.getByRole('textbox', { name: 'Username' });
+    return this.page.locator('input[formcontrolname="username"]');
   }
 
   /**
@@ -49,10 +57,10 @@ export class LoginPage extends BasePage {
 
   /**
    * Get the password input field.
-   * Uses codegen selector for the actual input.
+   * Uses formcontrolname attribute for reliable selection.
    */
   get passwordInput(): Locator {
-    return this.page.getByRole('textbox', { name: 'Password' });
+    return this.page.locator('input[formcontrolname="password"]');
   }
 
   /**
@@ -61,6 +69,10 @@ export class LoginPage extends BasePage {
    */
   get loginButton(): Locator {
     return this.page.getByRole('button', { name: 'Login' });
+  }
+
+  public divLocator(className: string): Locator {
+    return this.page.locator(className);
   }
 
   // Additional helper locators for validation and assertions
@@ -105,20 +117,17 @@ export class LoginPage extends BasePage {
 
   /**
    * Perform login with the given credentials.
-   * Uses the exact interaction sequence from codegen.
    *
    * @param username - The username to enter
    * @param password - The password to enter
    */
   async login(username: string, password: string): Promise<void> {
-    // Click the username wrapper div (as per codegen)
-    await this.usernameDivWrapper.click();
     // Fill the username input
+    await this.usernameInput.click();
     await this.usernameInput.fill(username);
 
-    // Click the password wrapper div (as per codegen)
-    await this.passwordDivWrapper.click();
     // Fill the password input
+    await this.passwordInput.click();
     await this.passwordInput.fill(password);
 
     // Click the login button

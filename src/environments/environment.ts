@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 // The file contents for the current environment will overwrite these during build.
 // The build system defaults to the dev environment which uses `environment.ts`, but if you do
 // `ng build --env=prod` then `environment.prod.ts` will be used instead.
@@ -56,7 +64,8 @@ export const environment = {
 
   displayBackEndInfo: loadedEnv.displayBackEndInfo || 'true',
   displayTenantSelector: loadedEnv.displayTenantSelector || 'true',
-  tenantLogoUrl: loadedEnv.tenantLogoUrl || 'assets/images/mifos_lg-logo.png',
+  tenantLogoUrl: loadedEnv.tenantLogoUrl || 'assets/images/mifos_lg-logo.jpg',
+  documentationBaseUrl: loadedEnv.documentationBaseUrl || 'https://mifosforge.jira.com/wiki',
   // Time in seconds, default 60 seconds
   waitTimeForNotifications: loadedEnv.waitTimeForNotifications || 60,
   // Time in seconds, default 30 seconds
@@ -75,12 +84,23 @@ export const environment = {
 
   minPasswordLength: loadedEnv.minPasswordLength || 12,
 
+  /**
+   * Hide client data information (mask client names with *)
+   * Set via MIFOS_COMPLIANCE_HIDE_CLIENT_DATA env var
+   */
+  complianceHideClientData:
+    loadedEnv.complianceHideClientData === 'true' || loadedEnv.complianceHideClientData === true || false,
+
   OIDC: {
-    oidcServerEnabled: window['env']['oidcServerEnabled'] === true || window['env']['oidcServerEnabled'] === 'true',
-    oidcBaseUrl: window['env']['oidcBaseUrl'] || '',
-    oidcClientId: window['env']['oidcClientId'] || '',
-    oidcApiUrl: window['env']['oidcApiUrl'] || '',
-    oidcFrontUrl: window['env']['oidcFrontUrl'] || ''
+    // Support legacy FINERACT_PLUGIN_OIDC_* variable names for backward compatibility
+    oidcServerEnabled:
+      loadedEnv.oidcServerEnabled === true ||
+      loadedEnv.oidcServerEnabled === 'true' ||
+      loadedEnv.FINERACT_PLUGIN_OIDC_ENABLED === 'true',
+    oidcBaseUrl: loadedEnv.oidcBaseUrl || loadedEnv.FINERACT_PLUGIN_OIDC_BASE_URL || '',
+    oidcClientId: loadedEnv.oidcClientId || loadedEnv.FINERACT_PLUGIN_OIDC_CLIENT_ID || '',
+    oidcApiUrl: loadedEnv.oidcApiUrl || loadedEnv.FINERACT_PLUGIN_OIDC_API_URL || '',
+    oidcFrontUrl: loadedEnv.oidcFrontUrl || loadedEnv.FINERACT_PLUGIN_OIDC_FRONTEND_URL || ''
   }
 };
 

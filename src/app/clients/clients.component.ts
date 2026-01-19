@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 /** Angular Imports. */
 import { Component, OnInit, ViewChild, inject } from '@angular/core';
 import { MatCheckbox } from '@angular/material/checkbox';
@@ -58,6 +66,20 @@ import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
 })
 export class ClientsComponent implements OnInit {
   private clientService = inject(ClientsService);
+
+  /** Returns true if client data masking is enabled */
+  get hideClientData(): boolean {
+    return environment.complianceHideClientData;
+  }
+
+  /** Mask a client name */
+  maskName(name: string): string {
+    if (!name) return '';
+    return name
+      .split(' ')
+      .map((part) => (part.length > 1 ? part[0] + '*'.repeat(part.length - 1) : part))
+      .join(' ');
+  }
 
   @ViewChild('showClosedAccounts') showClosedAccounts: MatCheckbox;
 

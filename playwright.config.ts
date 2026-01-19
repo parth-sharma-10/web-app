@@ -1,3 +1,10 @@
+﻿/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
 import { defineConfig, devices } from '@playwright/test';
 
 /**
@@ -52,14 +59,19 @@ export default defineConfig({
     screenshot: 'only-on-failure',
 
     // Default navigation timeout (increased for CI and financial app)
-    navigationTimeout: 60000,
+    navigationTimeout: 120000,
 
     // Default action timeout
-    actionTimeout: 20000
+    actionTimeout: 30000,
+
+    // Configure backend URL for tests
+    extraHTTPHeaders: {
+      Accept: 'application/json'
+    }
   },
 
   // Global test timeout (per test)
-  timeout: process.env.CI ? 90000 : 60000,
+  timeout: process.env.CI ? 180000 : 120000,
 
   // Configure projects for different browsers
   projects: [

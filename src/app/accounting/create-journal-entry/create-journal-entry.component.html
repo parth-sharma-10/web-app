@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <div class="container">
   <mat-card>
     <form [formGroup]="journalEntryForm" (ngSubmit)="submit()">
@@ -221,7 +229,7 @@
   <h2>{{ 'labels.heading.Add Journal Entry Form' | translate }}</h2>
   <p class="mw300">
     {{ 'labels.text.Red asterisk field' | translate }}
-    <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67895310/Add+Journal+Entries" target="_blank">{{
+    <a [href]="'addJournalEntries' | documentationLink" target="_blank" rel="noopener noreferrer">{{
       'labels.inputs.Add Journal Entries' | translate
     }}</a>
   </p>

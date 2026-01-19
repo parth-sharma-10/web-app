@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "Mifos X",
+  "APP_NAME": "Mifos® X WebApp",
   "Logged in as": "prisijungęs kaip",
   "Remember me": "Prisimink mane",
   "errors": {
@@ -81,6 +81,7 @@
     "validation.msg.loan.principal.is.greater.than.max": "Pagrindinė suma {{params[0].value}} yra neteisinga. Turi būti suma, mažesnė arba lygi didžiausiai pagrindinei sumai {{params[1].value}}.",
     "validation.msg.loan.principal.is.less.than.min": "Pagrindinė suma {{params[0].value}} yra neteisinga. Turi būti suma, didesnė arba lygi minimaliajai pagrindinei sumai {{params[1].value}}.",
     "validation.msg.loanproduct.accountingType.cannot.be.blank": "Apskaitos tipas yra privalomas.",
+    "labels.commons.Only up to 6 decimal places allowed": "Leidžiama iki 6 dešimtainių skaičių.",
     "validation.msg.loanproduct.accountingType.is.not.within.expected.range": "Netinkamas apskaitos tipas. Turi būti skaičius tarp {{params[1].value}} ir {{params[2].value}} imtinai.",
     "validation.msg.loanproduct.allowPartialPeriodInterestCalculation.not.supported.for.daily.calculations": "Leisti dalinį įmokos apskaičiavimą negali būti nustatyta kaip teisinga atliekant kasdienį skaičiavimą",
     "validation.msg.loanproduct.allowVariableInstallments.not.supported.for.selected.interest.calculation.type": "Kintamoji įmoka turėtų būti naudojama skaičiuojant kasdienes palūkanas arba leidžiant skaičiuoti dalines palūkanas",
@@ -283,6 +284,12 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "Išėmimo mokesčio laikotarpio tipas yra privalomas."
   },
   "labels": {
+    "version": {
+      "Tenant": "Nuomininkas",
+      "Mifos WebApp": "Mifos® WebApp",
+      "Apache Fineract": "Apache Fineract®",
+      "Server": "Serveris"
+    },
     "accounting": {
       "Accrual (periodic)": "Kaupiamasis (periodinis)",
       "Accrual (upfront)": "Sukaupimas (išankstinis)",
@@ -299,7 +306,8 @@
       }
     },
     "breadcrumbs": {
-      "Home": "Namai"
+      "Home": "Namai",
+      "Account Transfers": "Sąskaitų pervedimai"
     },
     "buttons": {
       "Accept Transfer": "Priimti perkėlimą",
@@ -504,6 +512,7 @@
       "Select All": "Pasirinkti viską",
       "Show more": "Rodyti daugiau",
       "Show less": "Rodyti mažiau",
+      "Signing in...": "Prisijungimas",
       "Staff": "Personalas",
       "Staff Assignment History": "Darbuotojų paskyrimo istorija",
       "Subledger Account": "Subledger sąskaita",
@@ -855,9 +864,13 @@
       "Password validation": "Slaptažodį turi sudaryti ne mažiau kaip {{minchar}} simbolių, iš kurių turi būti 1 didžioji, mažoji raidė ir specialus simbolis, o jį neturėtų sudaryti pasikartojantys simboliai ar tarpai",
       "Must be at least": "Turi būti bent jau",
       "Must be less or equal to": "Turi būti mažesnis arba lygus",
-      "must be after or equal to start date": "turi būti po pradžios datos arba jai lygi"
+      "must be after or equal to start date": "turi būti po pradžios datos arba jai lygi",
+      "No classification data available": "Nėra klasifikacijos duomenų",
+      "No": "Ne",
+      "Yes": "Taip"
     },
     "passwordPreferences": {
+      "Password most be at least 1 character and not more that 50 characters long": "Slaptažodis turi būti ne mažiau kaip 1 simbolis ir ne daugiau kaip 50 simbolių",
       "Password must be at least 1 character and not more than 50 characters long": "Slaptažodis turi būti ne mažiau kaip 1 simbolis ir ne daugiau kaip 50 simbolių",
       "Password must be at least 6 characters, no more than 50 characters long, must include at least one upper case letter, one lower case letter, one numeric digit and no space": "Slaptažodis turi būti ne mažiau kaip 6 simboliai, ne daugiau kaip 50 simbolių, turi būti bent viena didžioji raidė, viena mažoji raidė, vienas skaitmuo ir neturėti tarpų",
       "Password must be 12 to 50 characters long, containing at least one uppercase letter, one lowercase letter, one numeric digit, and one special character, with no spaces or consecutive repeating characters": "Slaptažodis turi būti nuo 12 iki 50 simbolių, turėti bent vieną didžiąją raidę, vieną mažąją raidę, vieną skaitmenį ir vieną specialųjį simbolį, be tarpų arba iš eilės einančių pasikartojančių simbolių"
@@ -1043,7 +1056,7 @@
       "Keyboard Shortcuts": "Klaviatūros nuorodos",
       "Last Active": "Paskutinis aktyvus",
       "Liabilities": "Įsipareigojimai",
-      "List of all codes in the Mifos system": "Visų kodų, esančių jūsų organizacijos Mifos sistemoje, sąrašas.",
+      "List of all codes in the Mifos system": "Visų kodų, esančių jūsų organizacijos Mifos® sistemoje, sąrašas.",
       "List of all currently available data tables": "Visų šiuo metu turimų duomenų lentelių sąrašas.",
       "List of all currently available reports": "Visų šiuo metu galimų ataskaitų sąrašas. Norėdami gauti daugiau informacijos, spustelėkite",
       "List of all maker checker tasks": "Visų gamintojų tikrintojo užduočių sąrašas. Norėdami gauti daugiau informacijos, spustelėkite",
@@ -1223,7 +1236,7 @@
       "View Client Signature": "Peržiūrėti kliento parašą",
       "View Journal Entry": "Žiūrėti žurnalo įrašą",
       "Waive Charge": "Atsisakyti mokesčio",
-      "Welcome to Mifos": "Sveiki atvykę į Mifos",
+      "Welcome to Mifos": "Sveiki atvykę į Mifos®",
       "WriteOff reasons to Expense accounts": "Išlaidų sąskaitų nurašymo priežastys",
       "Withdraw Money From Saving Account": "Išimkite pinigus iš taupomosios sąskaitos",
       "Withhold Tax": "Išskaičiuoti mokestį",
@@ -1248,7 +1261,18 @@
       "Not Yet Amortized Amount": "Dar neamortizuota suma",
       "Adjusted Amount": "Koreguota suma",
       "Charged Off Amount": "Nurašyta suma",
-      "Date": "Data"
+      "Date": "Data",
+      "Secure & Reliable": "Saugu ir patikima",
+      "Community Driven": "Bendruomenės varomas",
+      "Global Impact": "Pasaulinis poveikis",
+      "Personal Information": "Asmens informacija",
+      "Account Information": "Paskyros informacija",
+      "Entity Details": "Subjekto informacija",
+      "Group Membership": "Grupės narystė",
+      "Important Dates": "Svarbios datos",
+      "Contact Information": "Kontaktinė informacija",
+      "Classification": "Klasifikacija",
+      "Status": "Statusas"
     },
     "inputs": {
       "accounting": {
@@ -1258,6 +1282,9 @@
         "INCOME": "PAJAMOS",
         "EXPENSE": "IŠLAIDOS"
       },
+      "Basic": "Pagrindinis",
+      "Standard": "Standartinis",
+      "Strong": "Stiprus",
       "Percentage is required": "Reikalingas procentas",
       "ACCOUNTING": "APSKAITA",
       "ADDRESS": "ADRESAS",
@@ -1457,6 +1484,8 @@
       "Client Principal Loan": "Pagrindinė kliento paskola",
       "Create standing instructions at disbursement": "Sukurkite nuolatines instrukcijas išmokant",
       "Client Screen Reports": "Kliento ekrano ataskaitos",
+      "CLIENT STATUS": "KLIENTO STATUSAS",
+      "Client Status": "Kliento statusas",
       "Client Trends": "Klientų tendencijos",
       "Client Type": "Kliento tipas",
       "Client first name": "Kliento vardas",
@@ -2169,6 +2198,7 @@
       "Amount Range From": "Sumos diapazonas nuo",
       "Amount Range To": "Sumos diapazonas Iki",
       "Person": "Asmuo",
+      "Personal Data": "Asmens duomenys",
       "Phone Number": "Telefono numeris",
       "Place Guarantee Funds On-Hold": "Vietos garantijos lėšos yra sulaikytos",
       "Port": "Uostas",
@@ -2730,7 +2760,9 @@
     },
     "placeholders": {
       "Add new server": "Pridėti naują serverį",
-      "Search Activity": "Paieškos veikla"
+      "Search Activity": "Paieškos veikla",
+      "Enter your username": "Įveskite savo vartotojo vardą",
+      "Enter your password": "Įveskite slaptažodį"
     },
     "status": {
       "Active": "Aktyvus",
@@ -2802,6 +2834,7 @@
       "Add, modify or inactivate a Fixed deposit product": "Pridėkite, pakeiskite arba išaktyvinkite fiksuoto indėlio produktą",
       "Add, modify or inactivate a Recurring Deposit product": "Pridėkite, pakeiskite arba išaktyvinkite pasikartojančio indėlio produktą",
       "Address": "Adresas",
+      "Personal Data": "Asmens duomenys",
       "Adhoc Query": "Adhoc užklausa",
       "Advance Search": "Išplėstinė paieška",
       "Advanced search option for journal entries": "Išplėstinė žurnalo įrašų paieškos parinktis",
@@ -3062,7 +3095,7 @@
       "Financial Activity Mappings": "Finansinės veiklos žemėlapiai",
       "Filter by name": "Filtruoja pagal pavadinimą",
       "FilterByLoanIdOrError": "Filtruoti pagal paskolos ID arba klaidą",
-      "Fineract": "Fineract",
+      "Fineract": "Apache Fineract®",
       "Fixed Deposit Account Charges": "Fiksuoto indėlio sąskaitos mokesčiai",
       "Fixed Deposit Account Interest Rate Chart": "Fiksuoto indėlio sąskaitos palūkanų normos diagrama",
       "Fixed Deposit Account Standing Instructions": "Fiksuoto indėlio sąskaitos nuolatinės instrukcijos",
@@ -3163,7 +3196,7 @@
       "Manage your Services": "Tvarkykite savo paslaugas",
       "Manual journal entry transactions recorded in a journal": "Neautomatinio žurnalo įrašymo operacijos, įrašytos į žurnalą",
       "Message Gateway": "Pranešimų vartai",
-      "Mifos Initiative": "Mifos iniciatyva",
+      "Mifos Initiative": "Mifos® iniciatyva",
       "Mifos X data-tables allow the user to add custom fields": "„Mifos X“ duomenų lentelės leidžia vartotojui pridėti pasirinktinius laukus be įtaisytųjų laukų prie kliento profilio, paskolos / taupymo sąskaitos, grupės, centro ar biuro.",
       "Migrate Opening Balances": "Perkelkite atidarymo balansus",
       "Modify Loans Account": "Modifikuoti paskolų sąskaitą",

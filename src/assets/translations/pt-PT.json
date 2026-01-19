@@ -1,5 +1,5 @@
 {
-  "APP_NAME": "Mifos X",
+  "APP_NAME": "Mifos® X WebApp",
   "Logged in as": "logado como",
   "Remember me": "Lembre de mim",
   "errors": {
@@ -81,6 +81,7 @@
     "validation.msg.loan.principal.is.greater.than.max": "O valor principal {{params[0].value}} é inválido. Deve ser um valor menor ou igual ao valor principal máximo {{params[1].value}}.",
     "validation.msg.loan.principal.is.less.than.min": "O valor principal {{params[0].value}} é inválido. Deve ser um valor maior ou igual ao valor principal mínimo {{params[1].value}}.",
     "validation.msg.loanproduct.accountingType.cannot.be.blank": "O tipo de contabilidade é obrigatório.",
+    "labels.commons.Only up to 6 decimal places allowed": "Apenas até 6 casas decimais permitidas.",
     "validation.msg.loanproduct.accountingType.is.not.within.expected.range": "O tipo de contabilidade é inválido. Deve ser um número entre {{params[1].value}} e {{params[2].value}} inclusive.",
     "validation.msg.loanproduct.allowPartialPeriodInterestCalculation.not.supported.for.daily.calculations": "Permitir cálculo de parcela parcial não pode ser definido como verdadeiro para cálculo diário",
     "validation.msg.loanproduct.allowVariableInstallments.not.supported.for.selected.interest.calculation.type": "A Parcela Variável deve ser usada com cálculo de juros diários ou permitir cálculo de juros parciais verdadeiro",
@@ -283,6 +284,12 @@
     "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "O tipo de período de taxa de retirada é obrigatório."
   },
   "labels": {
+    "version": {
+      "Tenant": "Inquilino",
+      "Mifos WebApp": "Mifos® WebApp",
+      "Apache Fineract": "Apache Fineract®",
+      "Server": "Servidor"
+    },
     "accounting": {
       "Accrual (periodic)": "Acumulação (periódica)",
       "Accrual (upfront)": "Acumulação (antecipada)",
@@ -299,7 +306,8 @@
       }
     },
     "breadcrumbs": {
-      "Home": "Lar"
+      "Home": "Lar",
+      "Account Transfers": "Transferências entre contas"
     },
     "buttons": {
       "Accept Transfer": "Aceitar transferência",
@@ -504,6 +512,7 @@
       "Select All": "Selecionar tudo",
       "Show more": "Mostre mais",
       "Show less": "Mostre menos",
+      "Signing in...": "Entrando",
       "Staff": "Funcionários",
       "Staff Assignment History": "Histórico de Atribuição de Pessoal",
       "Subledger Account": "Conta auxiliar",
@@ -855,9 +864,13 @@
       "Password validation": "A senha deve conter no mínimo {{minchar}} caracteres, que deve conter 1 letra maiúscula, minúscula e caractere especial e não deve consistir em caracteres repetidos ou espaços em branco",
       "Must be at least": "Deve ser pelo menos",
       "Must be less or equal to": "Deve ser menor ou igual a",
-      "must be after or equal to start date": "deve ser posterior ou igual à data de início"
+      "must be after or equal to start date": "deve ser posterior ou igual à data de início",
+      "No classification data available": "Nenhum dado de classificação disponível",
+      "No": "Não",
+      "Yes": "Sim"
     },
     "passwordPreferences": {
+      "Password most be at least 1 character and not more that 50 characters long": "A senha deve ter pelo menos 1 caractere e não mais que 50 caracteres",
       "Password must be at least 1 character and not more than 50 characters long": "A senha deve ter pelo menos 1 caractere e não mais que 50 caracteres",
       "Password must be at least 6 characters, no more than 50 characters long, must include at least one upper case letter, one lower case letter, one numeric digit and no space": "A senha deve ter pelo menos 6 caracteres, não mais que 50 caracteres, deve incluir pelo menos uma letra maiúscula, uma letra minúscula, um dígito numérico e nenhum espaço",
       "Password must be 12 to 50 characters long, containing at least one uppercase letter, one lowercase letter, one numeric digit, and one special character, with no spaces or consecutive repeating characters": "A senha deve ter entre 12 e 50 caracteres, contendo pelo menos uma letra maiúscula, uma letra minúscula, um dígito numérico e um caractere especial, sem espaços ou caracteres repetidos consecutivos"
@@ -940,7 +953,7 @@
       "Configure Maker Checker Tasks": "Configurar tarefas do Maker Checker",
       "Configure Maker-Checker Tasks": "Configurar tarefas do Maker-Checker",
       "Customer Attributes": "Atributos do cliente",
-      "Configure Mifos Organization Needs": "O guia a seguir o ajudará a configurar o Mifos de acordo com as necessidades da sua organização.",
+      "Configure Mifos Organization Needs": "O guia a seguir o ajudará a configurar o Mifos® de acordo com as necessidades da sua organização.",
       "Create Charge": "Criar cobrança",
       "Create Closure": "Criar encerramento",
       "Create Code": "Criar código",
@@ -956,7 +969,7 @@
       "Create fixed deposit product": "Criar produto de depósito fixo",
       "Create loan product": "Criar produto de empréstimo",
       "Create recurring deposit product": "Crie um produto de depósito recorrente",
-      "Create Savings Product": "Crie um produto salvador",
+
       "Create share product": "Criar produto compartilhado",
       "Currency": "Moeda",
       "Currency Configuration": "Configuração de moeda",
@@ -1223,7 +1236,7 @@
       "View Client Signature": "Ver assinatura do cliente",
       "View Journal Entry": "Ver lançamento contábil manual",
       "Waive Charge": "Isenção de cobrança",
-      "Welcome to Mifos": "Bem-vindo à Mifos",
+      "Welcome to Mifos": "Bem-vindo  à Mifos®",
       "WriteOff reasons to Expense accounts": "Motivos de baixa em contas de despesas",
       "Withdraw Money From Saving Account": "Retirar dinheiro da conta poupança",
       "Withhold Tax": "Taxa administrativa",
@@ -1248,7 +1261,18 @@
       "Not Yet Amortized Amount": "Valor ainda nao amortizado",
       "Adjusted Amount": "Valor ajustado",
       "Charged Off Amount": "Valor baixado",
-      "Date": "Data"
+      "Date": "Data",
+      "Secure & Reliable": "Seguro e confiável",
+      "Community Driven": "Impulsionado pela comunidade",
+      "Global Impact": "Impacto global",
+      "Personal Information": "Informações Pessoais",
+      "Account Information": "Informações da Conta",
+      "Entity Details": "Detalhes da Entidade",
+      "Group Membership": "Membro do Grupo",
+      "Important Dates": "Datas Importantes",
+      "Contact Information": "Informações de Contato",
+      "Classification": "Classificação",
+      "Status": "Status"
     },
     "inputs": {
       "accounting": {
@@ -1258,6 +1282,9 @@
         "INCOME": "RENDA",
         "EXPENSE": "DESPESA"
       },
+      "Basic": "Básico",
+      "Standard": "Padrão",
+      "Strong": "Forte",
       "Percentage is required": "Percentual é obrigatório",
       "ACCOUNTING": "CONTABILIDADE",
       "ADDRESS": "ENDEREÇO",
@@ -1457,6 +1484,8 @@
       "Client Principal Loan": "Empréstimo principal do cliente",
       "Create standing instructions at disbursement": "Crie instruções permanentes no desembolso",
       "Client Screen Reports": "Relatórios de tela do cliente",
+      "CLIENT STATUS": "STATUS DO CLIENTE",
+      "Client Status": "Status do Cliente",
       "Client Trends": "Tendências do cliente",
       "Client Type": "Tipo de cliente",
       "Client first name": "Nome do cliente",
@@ -2169,6 +2198,7 @@
       "Amount Range From": "Faixa de valor de",
       "Amount Range To": "Faixa de valor até",
       "Person": "Pessoa",
+      "Personal Data": "Dados Pessoais",
       "Phone Number": "Número de telefone",
       "Place Guarantee Funds On-Hold": "Colocar fundos de garantia em espera",
       "Port": "Porta",
@@ -2728,7 +2758,9 @@
     },
     "placeholders": {
       "Add new server": "Adicionar novo servidor",
-      "Search Activity": "Atividade de pesquisa"
+      "Search Activity": "Atividade de pesquisa",
+      "Enter your username": "Digite seu nome de usuário",
+      "Enter your password": "Digite sua senha"
     },
     "status": {
       "Active": "Ativo",
@@ -2800,6 +2832,7 @@
       "Add, modify or inactivate a Fixed deposit product": "Adicionar, modificar ou desativar um produto de depósito fixo",
       "Add, modify or inactivate a Recurring Deposit product": "Adicionar, modificar ou desativar um produto de Depósito Recorrente",
       "Address": "Endereço",
+      "Personal Data": "Dados Pessoais",
       "Adhoc Query": "Consulta ad hoc",
       "Advance Search": "Busca Avançada",
       "Advanced search option for journal entries": "Opção de pesquisa avançada para lançamentos contábeis manuais",
@@ -2916,7 +2949,6 @@
       "Create Recurring Deposits Account": "Criar conta de depósitos recorrentes",
       "Create Report": "Criar relatório",
       "Create SMS Campaign": "Criar campanha SMS",
-      "Create Savings Product": "Criar produto salvador",
       "Create Savings Account": "Criar conta poupança",
       "Create Self Service User": "Criar usuário de autoatendimento",
       "Create Share Product": "Criar produto compartilhado",
@@ -3061,7 +3093,7 @@
       "Financial Activity Mappings": "Mapeamentos de atividades financeiras",
       "Filter by name": "Filtre por nome",
       "FilterByLoanIdOrError": "Filtrar por ID de empréstimo ou erro",
-      "Fineract": "Fineract",
+      "Fineract": "Apache Fineract®",
       "Fixed Deposit Account Charges": "Encargos de conta de depósito fixo",
       "Fixed Deposit Account Interest Rate Chart": "Gráfico de taxas de juros de contas de depósito fixo",
       "Fixed Deposit Account Standing Instructions": "Instruções permanentes da conta de depósito fixo",
@@ -3162,7 +3194,7 @@
       "Manage your Services": "Gerencie seus serviços",
       "Manual journal entry transactions recorded in a journal": "Transações de lançamento manual registradas em um diário",
       "Message Gateway": "Gateway de mensagens",
-      "Mifos Initiative": "Iniciativa Mifos",
+      "Mifos Initiative": "Iniciativa Mifos®",
       "Mifos X data-tables allow the user to add custom fields": "As tabelas de dados Mifos X permitem ao usuário adicionar campos personalizados além dos campos integrados a um perfil de cliente, empréstimo/conta poupança, grupo, centro ou escritório.",
       "Migrate Opening Balances": "Migrar saldos de abertura",
       "Modify Loans Account": "Modificar conta de empréstimos",

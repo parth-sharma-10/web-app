@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <div class="container">
   <mat-card>
     <form [formGroup]="userForm" (ngSubmit)="submit()">
@@ -211,7 +219,7 @@
   <h2>{{ 'labels.heading.Create User' | translate }}</h2>
   <p class="mw400">
     {{ 'labels.text.Filling Details' | translate }}:
-    <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67141740/Users" target="_blank">{{
+    <a [href]="'users' | documentationLink" target="_blank" rel="noopener noreferrer">{{
       'labels.inputs.Users' | translate
     }}</a>
   </p>

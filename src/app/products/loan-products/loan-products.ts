@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { Injectable, inject } from '@angular/core';
 import { SettingsService } from 'app/settings/settings.service';
 import { GlobalConfiguration } from 'app/system/configurations/global-configurations-tab/configuration.model';
@@ -75,7 +83,7 @@ export class LoanProducts {
 
     // In Fineract, the POST and PUT endpoints for /v1/loanproducts have a typo in the field
     // allowPartialPeriodInterestCalculation. Until that is fixed, we need to replace the field name in the payload.
-    loanProduct.allowPartialPeriodInterestCalcualtion = loanProduct.allowPartialPeriodInterestCalculation;
+    loanProduct.allowPartialPeriodInterestCalculation = loanProduct.allowPartialPeriodInterestCalculation;
     delete loanProduct.allowPartialPeriodInterestCalculation;
 
     // Set Default values If they were not set

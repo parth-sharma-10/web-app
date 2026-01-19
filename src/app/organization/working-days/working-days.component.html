@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <div class="container">
   <mat-card>
     <form [formGroup]="workingDaysForm" (ngSubmit)="submit()">
@@ -52,7 +60,7 @@
   <h2>{{ 'labels.heading.Working Days' | translate }}</h2>
   <p class="mw400">
     {{ 'labels.text.Click (Define Working Days)' | translate }}:
-    <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/90243212/Working+Days" target="_blank">{{
+    <a [href]="'workingDays' | documentationLink" target="_blank" rel="noopener noreferrer">{{
       'labels.inputs.Working Days' | translate
     }}</a>
   </p>

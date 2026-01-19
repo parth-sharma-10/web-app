@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <mat-card class="account-card">
   <mat-card-header class="header layout-column">
     <mat-card-title-group class="header-title-group">
@@ -372,6 +380,15 @@
       </a>
       <a
         mat-tab-link
+        [routerLink]="['./personal-data']"
+        routerLinkActive
+        #personalData="routerLinkActive"
+        [active]="personalData.isActive"
+      >
+        {{ 'labels.inputs.Personal Data' | translate }}
+      </a>
+      <a
+        mat-tab-link
         [routerLink]="['./address']"
         routerLinkActive
         #address="routerLinkActive"
@@ -427,7 +444,7 @@
           [active]="datatable.isActive"
           *mifosxHasPermission="'READ_' + clientDatatable.registeredTableName"
         >
-          {{ clientDatatable.registeredTableName }}
+          {{ formatTabLabel(clientDatatable.registeredTableName) }}
         </a>
       }
     </nav>

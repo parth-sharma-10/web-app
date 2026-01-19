@@ -1,3 +1,11 @@
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
 <div class="container">
   <mat-card>
     <form [formGroup]="employeeForm" (ngSubmit)="submit()">
@@ -116,7 +124,7 @@
   <p class="mw400">
     {{ 'labels.text.Start filling the details' | translate }} <br />
     {{ 'labels.text.For more details click' | translate }}:
-    <a href="https://mifosforge.jira.com/wiki/spaces/docs/pages/67141732/Manage+Employees" target="_blank">{{
+    <a [href]="'manageEmployees' | documentationLink" target="_blank" rel="noopener noreferrer">{{
       'labels.inputs.Manage Employees' | translate
     }}</a>
   </p>

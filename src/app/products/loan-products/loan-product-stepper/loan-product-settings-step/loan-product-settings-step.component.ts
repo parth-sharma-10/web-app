@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { Component, OnInit, Input, Output, EventEmitter, inject } from '@angular/core';
 import {
   UntypedFormGroup,
@@ -292,10 +300,22 @@ export class LoanProductSettingsStepComponent implements OnInit {
         '',
         Validators.required
       ],
-      graceOnPrincipalPayment: [''],
-      graceOnInterestPayment: [''],
-      graceOnInterestCharged: [''],
-      inArrearsTolerance: [''],
+      graceOnPrincipalPayment: [
+        '',
+        [Validators.min(0)]
+      ],
+      graceOnInterestPayment: [
+        '',
+        [Validators.min(0)]
+      ],
+      graceOnInterestCharged: [
+        '',
+        [Validators.min(0)]
+      ],
+      inArrearsTolerance: [
+        '',
+        [Validators.min(0)]
+      ],
       daysInYearType: [
         '',
         Validators.required
@@ -305,10 +325,19 @@ export class LoanProductSettingsStepComponent implements OnInit {
         Validators.required
       ],
       canDefineInstallmentAmount: [false],
-      graceOnArrearsAgeing: [''],
-      overdueDaysForNPA: [''],
+      graceOnArrearsAgeing: [
+        '',
+        [Validators.min(0)]
+      ],
+      overdueDaysForNPA: [
+        '',
+        [Validators.min(0)]
+      ],
       accountMovesOutOfNPAOnlyOnArrearsCompletion: [false],
-      principalThresholdForLastInstallment: [''],
+      principalThresholdForLastInstallment: [
+        '',
+        [Validators.min(0)]
+      ],
       allowVariableInstallments: [false],
       disallowExpectedDisbursements: [false],
       canUseForTopup: [false],
@@ -332,8 +361,14 @@ export class LoanProductSettingsStepComponent implements OnInit {
       enableDownPayment: [false],
       enableInstallmentLevelDelinquency: [false],
       useDueForRepaymentsConfigurations: [false],
-      dueDaysForRepaymentEvent: [''],
-      overDueDaysForRepaymentEvent: [''],
+      dueDaysForRepaymentEvent: [
+        '',
+        [Validators.min(0)]
+      ],
+      overDueDaysForRepaymentEvent: [
+        '',
+        [Validators.min(0)]
+      ],
       loanScheduleType: [
         LoanProducts.LOAN_SCHEDULE_TYPE_CUMULATIVE,
         Validators.required
@@ -381,7 +416,6 @@ export class LoanProductSettingsStepComponent implements OnInit {
           this.loanProductSettingsForm.removeControl('maximumGap');
         }
       });
-
     this.loanProductSettingsForm
       .get('isInterestRecalculationEnabled')
       .valueChanges.subscribe((isInterestRecalculationEnabled: any) => {

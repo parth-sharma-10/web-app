@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 (function(window) {
   window["env"] = window["env"] || {};
 
@@ -49,6 +57,10 @@
 
   // OAuth Client Id
   window['env']['oauthAppId'] = '';
+
+
+  // Hide client data (mask names)
+  window['env']['complianceHideClientData'] = '';
 
   // OIDC Plugin Environment variables
   window['env']['oidcServerEnabled'] = false;

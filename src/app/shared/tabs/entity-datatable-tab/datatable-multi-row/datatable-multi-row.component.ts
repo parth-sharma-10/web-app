@@ -1,8 +1,17 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { SelectionModel } from '@angular/cdk/collections';
 import { DecimalPipe, NgClass } from '@angular/common';
 import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges, ViewChild, inject } from '@angular/core';
 import { MatCheckboxChange as MatCheckboxChange, MatCheckbox } from '@angular/material/checkbox';
 import { MatDialog } from '@angular/material/dialog';
+import { formatTabLabel } from 'app/shared/utils/format-tab-label.util';
 import {
   MatTable,
   MatColumnDef,
@@ -54,6 +63,9 @@ import { STANDALONE_SHARED_IMPORTS } from 'app/standalone-shared.module';
   ]
 })
 export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges {
+  formatTabLabel(label: string): string {
+    return formatTabLabel(label);
+  }
   private route = inject(ActivatedRoute);
   private dateUtils = inject(Dates);
   private systemService = inject(SystemService);
@@ -155,7 +167,7 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
       dataTableEntryObject
     );
     const data = {
-      title: 'Add ' + this.datatableName + ' for ' + this.entityType,
+      title: 'Add ' + formatTabLabel(this.datatableName) + ' for ' + this.entityType,
       formfields: formfields
     };
     const addDialogRef = this.dialog.open(FormDialogComponent, { data, width: '50rem' });
@@ -182,7 +194,7 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
    */
   delete() {
     const deleteDataTableDialogRef = this.dialog.open(DeleteDialogComponent, {
-      data: { deleteContext: `the contents of ${this.datatableName}` }
+      data: { deleteContext: `the contents of ${formatTabLabel(this.datatableName)}` }
     });
     deleteDataTableDialogRef.afterClosed().subscribe((response: any) => {
       if (response.delete) {
@@ -198,7 +210,9 @@ export class DatatableMultiRowComponent implements OnInit, OnDestroy, OnChanges 
    */
   deleteSelected() {
     const deleteDataTableDialogRef = this.dialog.open(DeleteDialogComponent, {
-      data: { deleteContext: `the ${this.selection.selected.length} items selected of ${this.datatableName}` }
+      data: {
+        deleteContext: `the ${this.selection.selected.length} items selected of ${formatTabLabel(this.datatableName)}`
+      }
     });
     deleteDataTableDialogRef.afterClosed().subscribe((response: any) => {
       if (response.delete) {

@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 /** Angular Imports */
 import { Component, OnInit, inject } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, ReactiveFormsModule } from '@angular/forms';
@@ -71,6 +79,31 @@ export class PasswordPreferencesComponent implements OnInit {
         this.passwordPreferencesForm.get('validationPolicyId').setValue(passwordPreference.id);
       }
     }
+  }
+
+  /**
+   * TrackBy function for ngFor optimization.
+   * @param index Index of the item.
+   * @param item Password preference item.
+   * @returns Unique identifier for the item.
+   */
+  trackByPasswordPreference(index: number, item: any): any {
+    return item.id || index;
+  }
+
+  /**
+   * Gets the password preference label based on ID.
+   * @param preference Password preference object.
+   * @returns Translation key for the password preference label.
+   */
+  getPasswordLabel(preference: any): string {
+    // Map based on ID to ensure robustness
+    const labelMap: { [key: number]: string } = {
+      1: 'labels.inputs.Basic',
+      2: 'labels.inputs.Standard',
+      3: 'labels.inputs.Strong'
+    };
+    return labelMap[preference.id] || 'labels.inputs.Unknown';
   }
 
   /**

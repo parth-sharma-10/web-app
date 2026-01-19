@@ -1,4 +1,12 @@
-<div class="layout-row align-end gap-2px responsive-column container m-b-20">
+<!--
+  Copyright since 2025 Mifos Initiative
+
+  This Source Code Form is subject to the terms of the Mozilla Public
+  License, v. 2.0. If a copy of the MPL was not distributed with this
+  file, You can obtain one at http://mozilla.org/MPL/2.0/.
+-->
+
+<div class="layout-row align-end gap-2px responsive-column container m-b-0">
   <button
     mat-raised-button
     color="primary"
@@ -44,8 +52,8 @@
   </button>
 </div>
 
-<div class="container m-b-20">
-  <mat-card class="mat-elevation-z8">
+<div class="container m-b-0">
+  <mat-card class="mat-elevation-z8 role-details-card">
     <mat-card-content>
       <div class="layout-row-wrap">
         <div class="flex-40 flex-lt-md-50 header">
@@ -68,7 +76,7 @@
   </mat-card>
 </div>
 
-<div class="mat-elevation-z8 container">
+<div class="container m-b-20">
   <mat-card>
     <ng-container>
       <div class="permission-selected layout-row">
@@ -127,7 +135,7 @@
     </ng-container>
 
     @if (!isDisabled) {
-      <div class="layout-row layout-align-center gap-5px layout-xs-column">
+      <div class="layout-row layout-align-center gap-10px layout-xs-column">
         <mat-card-actions>
           <button type="button" mat-raised-button (click)="cancel(); restoreCheckboxes()">
             {{ 'labels.buttons.Cancel' | translate }}

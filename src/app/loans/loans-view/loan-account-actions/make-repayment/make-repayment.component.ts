@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 /** Angular Imports */
 import { Component, OnInit, Input, inject } from '@angular/core';
 import { UntypedFormGroup, UntypedFormBuilder, Validators, UntypedFormControl } from '@angular/forms';
@@ -326,11 +334,25 @@ export class MakeRepaymentComponent implements OnInit {
     }
     delete data.skipInterestRefund;
 
-    // Add waived penalty charge IDs if penalties are being waived
+    // Waive penalties first if selected, then submit repayment
     if (this.waivePenalties && this.selectedPenalties.length > 0) {
-      data.chargeIds = this.selectedPenalties;
+      this.penaltyManagementService.waivePenalties(this.loanId, this.selectedPenalties).subscribe({
+        next: () => {
+          this.submitRepayment(data);
+        },
+        error: (error: any) => {
+          console.error('Error waiving penalties:', error);
+          // Continue with repayment even if waive fails
+          this.submitRepayment(data);
+        }
+      });
+    } else {
+      this.submitRepayment(data);
     }
+  }
 
+  /** Submit the repayment after penalties are waived */
+  private submitRepayment(data: any) {
     this.loanService.submitLoanActionButton(this.loanId, data, this.command).subscribe((response: any) => {
       this.router.navigate(['../../transactions'], { relativeTo: this.route });
     });

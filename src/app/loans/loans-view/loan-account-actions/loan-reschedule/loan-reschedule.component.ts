@@ -1,3 +1,11 @@
+/**
+ * Copyright since 2025 Mifos Initiative
+ *
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { Component, OnInit, Input, inject, DestroyRef } from '@angular/core';
 import { LoansService } from 'app/loans/loans.service';
 import {
@@ -126,11 +134,25 @@ export class LoanRescheduleComponent implements OnInit {
     };
     data.loanId = this.loanId;
 
-    // Add waived penalty charge IDs if penalties are being waived
+    // Waive penalties first if selected, then submit reschedule
     if (this.waivePenalties.value && this.selectedPenalties.length > 0) {
-      data.chargeIds = this.selectedPenalties;
+      this.penaltyManagementService.waivePenalties(this.loanId, this.selectedPenalties).subscribe({
+        next: () => {
+          this.submitReschedule(data);
+        },
+        error: (error: any) => {
+          console.error('Error waiving penalties:', error);
+          // Continue with reschedule even if waive fails
+          this.submitReschedule(data);
+        }
+      });
+    } else {
+      this.submitReschedule(data);
     }
+  }
 
+  /** Submit the reschedule after penalties are waived */
+  private submitReschedule(data: any) {
     this.loanService.submitRescheduleData(data).subscribe((response: any) => {
       // TODO: needs to be updated
       // mentioned in Community App:
