@@ -288,7 +288,10 @@
       "Tenant": "भाडामा लिने व्यक्ति",
       "Mifos WebApp": "Mifos® WebApp",
       "Apache Fineract": "Apache Fineract®",
-      "Server": "सर्भर"
+      "Server": "सर्भर",
+      "Username": "प्रयोगकर्ता नाम",
+      "Name": "नाम",
+      "Render Time": "प्रस्तुति समय"
     },
     "accounting": {
       "Accrual (periodic)": "उपार्जन (आवधिक)",
@@ -549,7 +552,8 @@
       "Withdraw": "निकाल्नु",
       "View Active Charges": "सक्रिय शुल्कहरू हेर्नुहोस्",
       "View Inactive Charges": "निष्क्रिय शुल्कहरू हेर्नुहोस्",
-      "Yes": "हो"
+      "Yes": "हो",
+      "Is Self Service": "आत्म सेवा हो"
     },
     "catalogs": {
       "Interest payment waiver": "ब्याज भुक्तानी माफी",

@@ -289,7 +289,10 @@
       "Tenant": "Tenant",
       "Mifos WebApp": "Mifos® WebApp",
       "Apache Fineract": "Apache Fineract®",
-      "Server": "Server"
+      "Server": "Server",
+      "Username": "Username",
+      "Name": "Name",
+      "Render Time": "Render Time"
     },
     "accounting": {
       "Accrual (periodic)": "Accrual (periodic)",
@@ -550,7 +553,8 @@
       "Withdraw": "Withdraw",
       "View Active Charges": "View Active Charges",
       "View Inactive Charges": "View Inactive Charges",
-      "Yes": "Yes"
+      "Yes": "Yes",
+      "Is Self Service": "Is Self Service"
     },
     "catalogs": {
       "Interest payment waiver": "Interest Payment Waiver",

@@ -288,7 +288,10 @@
       "Tenant": "임차인",
       "Mifos WebApp": "Mifos® WebApp",
       "Apache Fineract": "Apache Fineract®",
-      "Server": "서버"
+      "Server": "서버",
+      "Username": "사용자 이름",
+      "Name": "이름",
+      "Render Time": "렌더링 시간"
     },
     "accounting": {
       "Accrual (periodic)": "발생(정기적)",
@@ -549,7 +552,8 @@
       "Withdraw": "철회하다",
       "View Active Charges": "활성 요금 보기",
       "View Inactive Charges": "비활성 요금 보기",
-      "Yes": "예"
+      "Yes": "예",
+      "Is Self Service": "셀프 서비스입니다"
     },
     "catalogs": {
       "Interest payment waiver": "이자 지급 면제",

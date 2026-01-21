@@ -288,7 +288,10 @@
       "Tenant": "Nomnieks",
       "Mifos WebApp": "Mifos® WebApp",
       "Apache Fineract": "Apache Fineract®",
-      "Server": "Serveris"
+      "Server": "Serveris",
+      "Username": "Lietotājvārds",
+      "Name": "Vārds",
+      "Render Time": "Attēlošanas laiks"
     },
     "accounting": {
       "Accrual (periodic)": "Uzkrāšana (periodiski)",
@@ -549,7 +552,8 @@
       "Withdraw": "Izņemt",
       "View Active Charges": "Skatīt aktīvās maksas",
       "View Inactive Charges": "Skatīt neaktīvās maksas",
-      "Yes": "Jā"
+      "Yes": "Jā",
+      "Is Self Service": "Ir pašapkalpošanās"
     },
     "catalogs": {
       "Interest payment waiver": "Atteikšanās no procentu maksājumiem",
