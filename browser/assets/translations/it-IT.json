@@ -347,6 +347,7 @@
       "Attach Meeting": "Allega riunione",
       "Attendance": "Partecipazione",
       "Back": "Indietro",
+      "Back to Account": "Torna al conto",
       "Bar Chart": "Grafico a barre",
       "Browse": "Navigare",
       "Bulk JLG Loan Application": "Richiesta di prestito JLG in blocco",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Visualizza le voci del diario",
       "View Standing Instructions": "Visualizza le istruzioni per la posizione in piedi",
       "View Transactions History": "Visualizza la cronologia delle transazioni",
+      "View Transactions": "Visualizza transazioni",
       "Waive": "Rinuncia",
       "Waive Charge": "Rinuncia all'addebito",
       "Week": "Settimana",
@@ -926,6 +928,8 @@
       "Assets / Liability": "Attività/Passività",
       "Audit Trails": "Percorsi di controllo",
       "Balance": "Bilancia",
+      "Beneficiary": "Beneficiario",
+      "Beneficiary Selection": "Selezione del beneficiario",
       "Block Savings Account": "Bloccare il conto di risparmio",
       "Bulk Import": "Importazione in blocco",
       "Bulk Loan Reassignment": "Riassegnazione del prestito in blocco",
@@ -1231,6 +1235,10 @@
       "Transaction Reverted": "Transazione annullata",
       "Transactions": "Transazioni",
       "Transfer Details": "Dettagli del trasferimento",
+      "Transfer Failed": "Trasferimento fallito",
+      "Transfer Status": "Stato del trasferimento",
+      "Transfer Successful": "Trasferimento riuscito",
+      "Transfer Summary": "Riepilogo del trasferimento",
       "Transferred From": "Trasferito da",
       "Transferred To": "Trasferito a",
       "Transferring From Details": "Trasferimento dai dettagli",
@@ -1289,6 +1297,11 @@
       "Pending Tasks": "Pending Tasks"
     },
     "inputs": {
+      "Floating rate": "Tasso variabile",
+      "Differential rate": "Tasso differenziale",
+      "Minimum interest rate": "Tasso di interesse minimo",
+      "Interest rate": "Tasso di interesse",
+      "Maximum interest rate": "Tasso di interesse massimo",
       "Terms": "Termini",
       "Settings": "Impostazioni",
       "accounting": {
@@ -1632,6 +1645,7 @@
       "Decimals to Display": "Decimali da visualizzare",
       "Default": "Predefinito",
       "Default Date Format": "Formato data predefinito",
+      "Default Datetime Format": "Formato data e ora predefinito",
       "Default Font": "Carattere predefinito",
       "Default Language": "Lingua di default",
       "Default Savings Account": "Conto di risparmio predefinito",
@@ -1745,6 +1759,12 @@
       "External ID": "ID esterno",
       "External Id": "ID esterno",
       "External id": "Identificativo esterno",
+      "External ID not found": "ID esterno non trovato",
+      "External ID lookup failed": "Ricerca ID esterno non riuscita",
+      "External ID format is invalid": "Il formato dell'ID esterno non è valido",
+      "External ID verified successfully": "ID esterno verificato con successo",
+      "Looking up External ID...": "Ricerca ID esterno in corso...",
+      "External ID lookup timed out": "Timeout della ricerca dell'ID esterno",
       "event with entity name of": "evento con nome entità di",
       "FAMILY MEMBERS": "MEMBRI DELLA FAMIGLIA",
       "FCM End Point": "Punto finale FCM",
@@ -1840,6 +1860,7 @@
       "Hook Template": "Modello di gancio",
       "Host": "Ospite",
       "Host Name": "Nome host",
+      "Hour": "Ora",
       "ID": "ID",
       "INTEREST RATE CHART": "GRAFICO DEL TASSO DI INTERESSE",
       "Id": "Id",
@@ -2074,6 +2095,7 @@
       "Minimum Value": "Valore minimo",
       "Minimum days between disbursal and first repayment date": "Giorni minimi tra la data di erogazione e la data del primo rimborso",
       "Minimum gap between Installments": "Intervallo minimo tra le rate",
+      "Minute": "Minuto",
       "Mobile": "Mobile",
       "Mobile Banking App": "Applicazione bancaria mobile",
       "Mobile No": "Cellulare n",
@@ -2977,6 +2999,7 @@
       "Create Hook": "Crea gancio",
       "Create Journal Entry": "Crea voce di diario",
       "Create Loan Product": "Crea prodotto di prestito",
+      "Create Loan Originator": "Crea originatore di prestiti",
       "Create Loans Account": "Crea un conto prestiti",
       "Create New GL Account": "Questa opzione ti consente di creare nuovi account GL.",
       "Create Office": "Crea ufficio",
@@ -3235,6 +3258,7 @@
       "Manage Funds": "Gestisci i fondi",
       "Manage Holidays": "Gestisci le vacanze",
       "Manage Hooks": "Gestisci gli hook",
+      "Manage Loan Originators": "Gestire gli originatori di prestiti",
       "Manage Offices": "Gestire gli uffici",
       "Manage Offices page allows you to create, edit": "La pagina Gestisci uffici ti consente di creare, modificare e aggiungere gli uffici all'interno della tua organizzazione.",
       "Manage Reports": "Gestisci rapporti",
@@ -3540,7 +3564,14 @@
         "REOPEN": "Riapri",
         "WITHDRAW": "Preleva",
         "DEPOSIT": "Deposita",
-        "TRANSFER": "Trasferisci"
+        "TRANSFER": "Trasferisci",
+        "POSTINTEREST": "Pubblica interesse",
+        "CALCULATEINTEREST": "Calcola interesse",
+        "ASSIGNSTAFF": "Assegna personale",
+        "ACCEPTTRANSFER": "Accetta trasferimento",
+        "PROPOSETRANSFER": "Proponi trasferimento",
+        "REPAYMENT": "Rimborso",
+        "DISBURSETOSAVINGS": "Erogazione a risparmio"
       },
       "entities": {
         "ROLE": "Ruolo",
@@ -3569,7 +3600,11 @@
         "GUARANTOR": "Garante",
         "SHAREPRODUCT": "Prodotto azioni",
         "FIXEDDEPOSITPRODUCT": "Prodotto deposito vincolato",
-        "RECURRINGDEPOSITPRODUCT": "Prodotto deposito ricorrente"
+        "FIXEDDEPOSITACCOUNT": "Conto deposito vincolato",
+        "RECURRINGDEPOSITPRODUCT": "Prodotto deposito ricorrente",
+        "RECURRINGDEPOSITACCOUNT": "Conto deposito ricorrente",
+        "ACCOUNTTRANSFER": "Trasferimento conto",
+        "SSBENEFICIARYTPT": "Beneficiari TPT Servizio Autoservizio"
       }
     },
     "titles": {
@@ -3578,7 +3613,19 @@
       "Login": "Login"
     },
     "messages": {
-      "No Data Found": "Nessun dato trovato"
+      "No Data Found": "Nessun dato trovato",
+      "No Upcoming Charges Available": "Nessun addebito imminente disponibile",
+      "No Active Loan Accounts Available": "Nessun conto di prestito attivo disponibile",
+      "No Closed Loan Accounts Available": "Nessun conto di prestito chiuso disponibile",
+      "No Active Saving Accounts Available": "Nessun conto di risparmio attivo disponibile",
+      "No Closed Saving Accounts Available": "Nessun conto di risparmio chiuso disponibile",
+      "No Active Fixed Deposit Accounts Available": "Nessun conto di deposito fisso attivo disponibile",
+      "No Closed Fixed Deposit Accounts Available": "Nessun conto di deposito fisso chiuso disponibile",
+      "No Active Recurring Deposit Accounts Available": "Nessun conto di deposito ricorrente attivo disponibile",
+      "No Closed Recurring Deposit Accounts Available": "Nessun conto di deposito ricorrente chiuso disponibile",
+      "No Active Share Accounts Available": "Nessun conto di azioni attivo disponibile",
+      "No Closed Share Accounts Available": "Nessun conto di azioni chiuso disponibile",
+      "No Collateral Data Available": "Nessun dato collaterale disponibile"
     }
   },
   "languages": {

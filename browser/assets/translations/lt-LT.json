@@ -347,6 +347,7 @@
       "Attach Meeting": "Pridėti susitikimą",
       "Attendance": "Lankomumas",
       "Back": "Atgal",
+      "Back to Account": "Grįžti į sąskaitą",
       "Bar Chart": "Juostinė diagrama",
       "Browse": "Naršyti",
       "Bulk JLG Loan Application": "Masinės JLG paskolos paraiška",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Peržiūrėkite žurnalo įrašus",
       "View Standing Instructions": "Peržiūrėkite nuolatines instrukcijas",
       "View Transactions History": "Peržiūrėkite operacijų istoriją",
+      "View Transactions": "Peržiūrėti operacijas",
       "Waive": "Atsisakyti",
       "Waive Charge": "Atsisakyti mokesčio",
       "Week": "Savaitė",
@@ -925,6 +927,8 @@
       "Assets / Liability": "Turtas / įsipareigojimai",
       "Audit Trails": "Audito takai",
       "Balance": "Balansas",
+      "Beneficiary": "Gavėjas",
+      "Beneficiary Selection": "Gavėjo pasirinkimas",
       "Block Savings Account": "Blokuoti taupomąją sąskaitą",
       "Bulk Import": "Masinis importas",
       "Bulk Loan Reassignment": "Masinės paskolos perskirstymas",
@@ -1230,6 +1234,10 @@
       "Transaction Reverted": "Sandoris grąžintas",
       "Transactions": "Sandoriai",
       "Transfer Details": "Pervedimo informacija",
+      "Transfer Failed": "Pervedimas nepavyko",
+      "Transfer Status": "Pervedimo būsena",
+      "Transfer Successful": "Pervedimas sėkmingas",
+      "Transfer Summary": "Pervedimo santrauka",
       "Transferred From": "Perkelta iš",
       "Transferred To": "Perkelta į",
       "Transferring From Details": "Perkėlimas iš detalių",
@@ -1288,6 +1296,11 @@
       "Pending Tasks": "Laukiamos užduotys"
     },
     "inputs": {
+      "Floating rate": "Slankioji norma",
+      "Differential rate": "Diferencinis tarifas",
+      "Minimum interest rate": "Minimali palūkanų norma",
+      "Interest rate": "Palūkanų norma",
+      "Maximum interest rate": "Maksimali palūkanų norma",
       "Terms": "Sąlygos",
       "Settings": "Nustatymai",
       "accounting": {
@@ -1631,6 +1644,7 @@
       "Decimals to Display": "Rodomos dešimtainės trupmenos",
       "Default": "Numatytas",
       "Default Date Format": "Numatytasis datos formatas",
+      "Default Datetime Format": "Numatytasis datos ir laiko formatas",
       "Default Font": "Numatytasis šriftas",
       "Default Language": "Numatytoji kalba",
       "Default Savings Account": "Numatytoji taupomoji sąskaita",
@@ -1744,6 +1758,12 @@
       "External ID": "Išorinis ID",
       "External Id": "Išorinis ID",
       "External id": "Išorinis id",
+      "External ID not found": "Išorinis ID nerastas",
+      "External ID lookup failed": "Išorinio ID paieška nepavyko",
+      "External ID format is invalid": "Išorinio ID formatas netinkamas",
+      "External ID verified successfully": "Išorinis ID sėkmingai patvirtintas",
+      "Looking up External ID...": "Ieškoma išorinio ID...",
+      "External ID lookup timed out": "Išorinio ID paieškos laikas baigėsi",
       "event with entity name of": "įvykis su subjekto pavadinimu",
       "FAMILY MEMBERS": "ŠEIMOS NARIAI",
       "FCM End Point": "FCM pabaigos taškas",
@@ -1839,6 +1859,7 @@
       "Hook Template": "Kabliuko šablonas",
       "Host": "Šeimininkas",
       "Host Name": "Pagrindinio kompiuterio pavadinimas",
+      "Hour": "Valanda",
       "ID": "ID",
       "INTEREST RATE CHART": "PALŪKANŲ NORMOS SCHEMA",
       "Id": "Id",
@@ -2073,6 +2094,7 @@
       "Minimum Value": "Minimali vertė",
       "Minimum days between disbursal and first repayment date": "Minimalios dienos nuo išmokėjimo iki pirmojo grąžinimo datos",
       "Minimum gap between Installments": "Minimalus tarpas tarp įmokų",
+      "Minute": "Minutė",
       "Mobile": "Mobilusis",
       "Mobile Banking App": "Mobiliosios bankininkystės programa",
       "Mobile No": "Mobiliojo Nr",
@@ -2978,6 +3000,7 @@
       "Create Hook": "Sukurti kabliuką",
       "Create Journal Entry": "Sukurti žurnalo įrašą",
       "Create Loan Product": "Sukurti paskolos produktą",
+      "Create Loan Originator": "Sukurti paskolos teikėją",
       "Create Loans Account": "Sukurti paskolų sąskaitą",
       "Create New GL Account": "Ši parinktis leidžia kurti naujas GL paskyras.",
       "Create Office": "Sukurkite biurą",
@@ -3236,6 +3259,7 @@
       "Manage Funds": "Valdykite lėšas",
       "Manage Holidays": "Tvarkyti šventes",
       "Manage Hooks": "Tvarkyti kabliukus",
+      "Manage Loan Originators": "Tvarkyti paskolų teikėjus",
       "Manage Offices": "Tvarkyti biurus",
       "Manage Offices page allows you to create, edit": "Puslapyje Tvarkyti biurus galite kurti, redaguoti ir įtraukti biurus savo organizacijoje.",
       "Manage Reports": "Tvarkyti ataskaitas",
@@ -3541,7 +3565,14 @@
         "REOPEN": "Atidaryti iš naujo",
         "WITHDRAW": "Išimti",
         "DEPOSIT": "Įdėti",
-        "TRANSFER": "Perkelti"
+        "TRANSFER": "Perkelti",
+        "POSTINTEREST": "Paskelbti palūkanas",
+        "CALCULATEINTEREST": "Apskaičiuoti palūkanas",
+        "ASSIGNSTAFF": "Priskirti personalui",
+        "ACCEPTTRANSFER": "Priimti perkėlimą",
+        "PROPOSETRANSFER": "Siūlyti perkėlimą",
+        "REPAYMENT": "Grąžinimas",
+        "DISBURSETOSAVINGS": "Išmokėti į taupymą"
       },
       "entities": {
         "ROLE": "Vaidmuo",
@@ -3570,7 +3601,11 @@
         "GUARANTOR": "Garantas",
         "SHAREPRODUCT": "Akcijų produktas",
         "FIXEDDEPOSITPRODUCT": "Terminuoto indėlio produktas",
-        "RECURRINGDEPOSITPRODUCT": "Periodinio indėlio produktas"
+        "FIXEDDEPOSITACCOUNT": "Terminuoto indėlio sąskaita",
+        "RECURRINGDEPOSITPRODUCT": "Periodinio indėlio produktas",
+        "RECURRINGDEPOSITACCOUNT": "Periodinio indėlio sąskaita",
+        "ACCOUNTTRANSFER": "Sąskaitos pervedimas",
+        "SSBENEFICIARYTPT": "Gavėjai TPT Savitarna"
       }
     },
     "titles": {
@@ -3579,7 +3614,19 @@
       "Login": "Prisijungti"
     },
     "messages": {
-      "No Data Found": "Duomenų nerasta"
+      "No Data Found": "Duomenų nerasta",
+      "No Upcoming Charges Available": "Nėra artėjančių mokesčių",
+      "No Active Loan Accounts Available": "Nėra aktyvių paskolų sąskaitų",
+      "No Closed Loan Accounts Available": "Nėra uždarytų paskolų sąskaitų",
+      "No Active Saving Accounts Available": "Nėra aktyvių taupomosios sąskaitos",
+      "No Closed Saving Accounts Available": "Nėra uždarytų taupomosios sąskaitos",
+      "No Active Fixed Deposit Accounts Available": "Nėra aktyvių terminuotų indėlių sąskaitų",
+      "No Closed Fixed Deposit Accounts Available": "Nėra uždarytų terminuotų indėlių sąskaitų",
+      "No Active Recurring Deposit Accounts Available": "Nėra aktyvių pasikartojančių indėlių sąskaitų",
+      "No Closed Recurring Deposit Accounts Available": "Nėra uždarytų pasikartojančių indėlių sąskaitų",
+      "No Active Share Accounts Available": "Nėra aktyvių akcijų sąskaitų",
+      "No Closed Share Accounts Available": "Nėra uždarytų akcijų sąskaitų",
+      "No Collateral Data Available": "Nėra užstato duomenų"
     }
   },
   "languages": {

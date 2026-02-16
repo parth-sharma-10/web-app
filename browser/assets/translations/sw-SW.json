@@ -347,6 +347,7 @@
       "Attach Meeting": "Ambatanisha Mkutano",
       "Attendance": "Mahudhurio",
       "Back": "Nyuma",
+      "Back to Account": "Rudi kwa Akaunti",
       "Bar Chart": "Chati ya Baa",
       "Browse": "Vinjari",
       "Bulk JLG Loan Application": "Maombi ya Mkopo wa Wingi wa JLG",
@@ -548,6 +549,7 @@
       "View Journal Entries": "Tazama Maingizo ya Jarida",
       "View Standing Instructions": "Tazama Maagizo ya Kudumu",
       "View Transactions History": "Tazama Historia ya Shughuli",
+      "View Transactions": "Tazama Shughuli",
       "Waive": "Acha",
       "Waive Charge": "Kuondoa Malipo",
       "Week": "Wiki",
@@ -925,6 +927,8 @@
       "Assets / Liability": "Mali / Dhima",
       "Audit Trails": "Njia za Ukaguzi",
       "Balance": "Mizani",
+      "Beneficiary": "Mnufaika",
+      "Beneficiary Selection": "Uchaguzi wa Mnufaika",
       "Block Savings Account": "Zuia Akaunti ya Akiba",
       "Bulk Import": "Ingiza Wingi",
       "Bulk Loan Reassignment": "Ugawaji upya wa mkopo kwa wingi",
@@ -1228,6 +1232,11 @@
       "Transaction Details": "Maelezo ya Muamala",
       "Transaction Reverted": "Muamala Umerejeshwa",
       "Transactions": "Shughuli",
+      "Transfer Details": "Maelezo ya Uhamisho",
+      "Transfer Failed": "Uhamisho Umeshindwa",
+      "Transfer Status": "Hali ya Uhamisho",
+      "Transfer Successful": "Uhamisho Umefanikiwa",
+      "Transfer Summary": "Muhtasari wa Uhamisho",
       "Transferred From": "Imehamishwa Kutoka",
       "Transferred To": "Imehamishwa Kwa",
       "Transferring From Details": "Kuhamisha Kutoka kwa Maelezo",
@@ -1286,6 +1295,11 @@
       "Pending Tasks": "Kazi Zinazongoja"
     },
     "inputs": {
+      "Floating rate": "Kiwango cha Kuelea",
+      "Differential rate": "Kiwango cha Tofauti",
+      "Minimum interest rate": "Kiwango cha Riba cha Chini",
+      "Interest rate": "Kiwango cha Riba",
+      "Maximum interest rate": "Kiwango cha Riba cha Juu",
       "Terms": "Masharti",
       "Settings": "Mipangilio",
       "accounting": {
@@ -1629,6 +1643,7 @@
       "Decimals to Display": "Desimali za Kuonyeshwa",
       "Default": "Chaguomsingi",
       "Default Date Format": "Umbizo la Tarehe Chaguomsingi",
+      "Default Datetime Format": "Umbizo la Tarehe na Wakati Chaguomsingi",
       "Default Font": "Fonti Chaguomsingi",
       "Default Language": "Lugha Chaguomsingi",
       "Default Savings Account": "Akaunti ya Akiba chaguomsingi",
@@ -1742,6 +1757,12 @@
       "External ID": "Kitambulisho cha Nje",
       "External Id": "Kitambulisho cha Nje",
       "External id": "Kitambulisho cha nje",
+      "External ID not found": "Kitambulisho cha Nje hakijapatikana",
+      "External ID lookup failed": "Utafutaji wa Kitambulisho cha Nje umeshindwa",
+      "External ID format is invalid": "Muundo wa Kitambulisho cha Nje si sahihi",
+      "External ID verified successfully": "Kitambulisho cha Nje kimethibitishwa kwa mafanikio",
+      "Looking up External ID...": "Inatafuta Kitambulisho cha Nje...",
+      "External ID lookup timed out": "Muda wa utafutaji wa Kitambulisho cha Nje umeisha",
       "event with entity name of": "tukio lenye jina la huluki ya",
       "FAMILY MEMBERS": "WANAFAMILIA",
       "FCM End Point": "FCM Mwisho Point",
@@ -1837,6 +1858,7 @@
       "Hook Template": "Kigezo cha ndoano",
       "Host": "Mwenyeji",
       "Host Name": "Jina la mwenyeji",
+      "Hour": "Saa",
       "ID": "ID",
       "INTEREST RATE CHART": "CHATI YA KIWANGO CHA RIBA",
       "Id": "Kitambulisho",
@@ -2071,6 +2093,7 @@
       "Minimum Value": "Thamani ya chini",
       "Minimum days between disbursal and first repayment date": "Siku chache kati ya malipo na tarehe ya malipo ya kwanza",
       "Minimum gap between Installments": "Pengo la chini kati ya Mikopo",
+      "Minute": "Dakika",
       "Mobile": "Rununu",
       "Mobile Banking App": "Programu ya Benki ya Simu ya Mkononi",
       "Mobile No": "Simu No",
@@ -2974,6 +2997,7 @@
       "Create Hook": "Unda Hook",
       "Create Journal Entry": "Unda Ingizo la Jarida",
       "Create Loan Product": "Tengeneza Bidhaa ya Mkopo",
+      "Create Loan Originator": "Unda Mwanzilishi wa Mkopo",
       "Create Loans Account": "Unda Akaunti ya Mikopo",
       "Create New GL Account": "Chaguo hili hukuruhusu kuunda akaunti mpya za GL.",
       "Create Office": "Unda Ofisi",
@@ -3232,6 +3256,7 @@
       "Manage Funds": "Dhibiti Fedha",
       "Manage Holidays": "Dhibiti Sikukuu",
       "Manage Hooks": "Kusimamia Hooks",
+      "Manage Loan Originators": "Dhibiti Waanzilishi wa Mikopo",
       "Manage Offices": "Kusimamia Ofisi",
       "Manage Offices page allows you to create, edit": "Ukurasa wa Dhibiti Ofisi hukuruhusu kuunda, kuhariri na kuongeza ofisi ndani ya shirika lako.",
       "Manage Reports": "Dhibiti Ripoti",
@@ -3537,7 +3562,14 @@
         "REOPEN": "Fungua tena",
         "WITHDRAW": "Toa",
         "DEPOSIT": "Weka",
-        "TRANSFER": "Hamisha"
+        "TRANSFER": "Hamisha",
+        "POSTINTEREST": "Chapisha riba",
+        "CALCULATEINTEREST": "Hesabu riba",
+        "ASSIGNSTAFF": "Teua wafanyakazi",
+        "ACCEPTTRANSFER": "Kubali uhamishaji",
+        "PROPOSETRANSFER": "Pendekeza uhamishaji",
+        "REPAYMENT": "Malipo",
+        "DISBURSETOSAVINGS": "Toa kwenye akiba"
       },
       "entities": {
         "ROLE": "Jukumu",
@@ -3566,7 +3598,11 @@
         "GUARANTOR": "Mdhamini",
         "SHAREPRODUCT": "Bidhaa ya hisa",
         "FIXEDDEPOSITPRODUCT": "Bidhaa ya amana isiyobadilika",
-        "RECURRINGDEPOSITPRODUCT": "Bidhaa ya amana ya mara kwa mara"
+        "FIXEDDEPOSITACCOUNT": "Akaunti ya amana isiyobadilika",
+        "RECURRINGDEPOSITPRODUCT": "Bidhaa ya amana ya mara kwa mara",
+        "RECURRINGDEPOSITACCOUNT": "Akaunti ya amana ya mara kwa mara",
+        "ACCOUNTTRANSFER": "Uhamishaji wa akaunti",
+        "SSBENEFICIARYTPT": "Wapokeaji TPT Huduma ya Kujitegemea"
       }
     },
     "titles": {
@@ -3575,7 +3611,19 @@
       "Login": "Ingia"
     },
     "messages": {
-      "No Data Found": "Hakuna Data Imepatikana"
+      "No Data Found": "Hakuna Data Imepatikana",
+      "No Upcoming Charges Available": "Hakuna malipo yanayokuja yanapatikana",
+      "No Active Loan Accounts Available": "Hakuna akaunti za mkopo zinazofanya kazi zinapatikana",
+      "No Closed Loan Accounts Available": "Hakuna akaunti za mkopo zilizofungwa zinapatikana",
+      "No Active Saving Accounts Available": "Hakuna akaunti za akiba zinazofanya kazi zinapatikana",
+      "No Closed Saving Accounts Available": "Hakuna akaunti za akiba zilizofungwa zinapatikana",
+      "No Active Fixed Deposit Accounts Available": "Hakuna akaunti za amana zisizohamishika zinazofanya kazi zinapatikana",
+      "No Closed Fixed Deposit Accounts Available": "Hakuna akaunti za amana zisizohamishika zilizofungwa zinapatikana",
+      "No Active Recurring Deposit Accounts Available": "Hakuna akaunti za amana za mara kwa mara zinazofanya kazi zinapatikana",
+      "No Closed Recurring Deposit Accounts Available": "Hakuna akaunti za amana za mara kwa mara zilizofungwa zinapatikana",
+      "No Active Share Accounts Available": "Hakuna akaunti za hisa zinazofanya kazi zinapatikana",
+      "No Closed Share Accounts Available": "Hakuna akaunti za hisa zilizofungwa zinapatikana",
+      "No Collateral Data Available": "Hakuna data ya dhamana inayopatikana"
     }
   },
   "languages": {

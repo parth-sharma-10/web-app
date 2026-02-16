@@ -32,6 +32,9 @@
 
   window['env']['supportedLanguages'] = '$MIFOS_SUPPORTED_LANGUAGES';
 
+  window['env']['defaultFormatDate'] = '$MIFOS_DEFAULT_FORMAT_DATE';
+  window['env']['defaultFormatDatetime'] = '$MIFOS_DEFAULT_FORMAT_DATETIME';
+
   window['env']['preloadClients'] = '$MIFOS_PRELOAD_CLIENTS';
 
   // Char delimiter to Export CSV options: ',' ';' '|' ' '
@@ -102,6 +105,14 @@
   // Enable Role-Based Access Control (RBAC) for menu/button permissions
   // Set to 'true' to enable RBAC, 'false' (default) for backward compatibility
   window['env']['productionModeEnableRBAC'] = '$MIFOS_PRODUCTION_MODE_ENABLE_RBAC';
+
+  // External National ID System Integration
+  // API key is injected server-side via nginx proxy_set_header — not exposed to browser
+  window['env']['enableExternalNationalIdSystem'] = '$ENABLE_EXTERNAL_NATIONAL_ID_SYSTEM';
+  window['env']['externalNationalIdSystemUrl'] = '$EXTERNAL_NATIONAL_ID_SYSTEM_URL';
+  window['env']['externalNationalIdSystemApiHeader'] = '$EXTERNAL_NATIONAL_ID_SYSTEM_API_HEADER';
+  window['env']['externalNationalIdSystemApiKey'] = '$EXTERNAL_NATIONAL_ID_SYSTEM_API_KEY';
+  window['env']['externalNationalIdRegex'] = '$EXTERNAL_NATIONAL_ID_REGEX';
 
   // OIDC Plugin Environment variables
   window['env']['oidcServerEnabled'] = '$FINERACT_PLUGIN_OIDC_ENABLED';

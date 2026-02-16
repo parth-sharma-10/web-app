@@ -351,6 +351,7 @@
       "Attach Meeting": "Attach Meeting",
       "Attendance": "Attendance",
       "Back": "Back",
+      "Back to Account": "Back to Account",
       "Bar Chart": "Bar Chart",
       "Browse": "Browse",
       "Bulk JLG Loan Application": "Bulk JLG Loan Application",
@@ -552,6 +553,7 @@
       "View Journal Entries": "View Journal Entries",
       "View Standing Instructions": "View Standing Instructions",
       "View Transactions History": "View Transactions History",
+      "View Transactions": "View Transactions",
       "Waive": "Waive",
       "Waive Charge": "Waive Charge",
       "Week": "Week",
@@ -932,6 +934,8 @@
       "Assets / Liability": "Assets / Liability",
       "Audit Trails": "Audit Trails",
       "Balance": "Balance",
+      "Beneficiary": "Beneficiary",
+      "Beneficiary Selection": "Beneficiary Selection",
       "Block Savings Account": "Block Savings Account",
       "Bulk Import": "Bulk Import",
       "Bulk Loan Reassignment": "Bulk Loan Reassignment",
@@ -1245,6 +1249,10 @@
       "Transaction Reverted": "Transaction Reverted",
       "Transactions": "Transactions",
       "Transfer Details": "Transfer Details",
+      "Transfer Failed": "Transfer Failed",
+      "Transfer Status": "Transfer Status",
+      "Transfer Successful": "Transfer Successful",
+      "Transfer Summary": "Transfer Summary",
       "Transferred From": "Transferred From",
       "Transferred To": "Transferred To",
       "Transferring From Details": "Transferring From Details",
@@ -1294,6 +1302,11 @@
       "Global Impact": "Global Impact"
     },
     "inputs": {
+      "Floating rate": "Floating Rate",
+      "Differential rate": "Differential Rate",
+      "Minimum interest rate": "Minimum Interest Rate",
+      "Interest rate": "Interest Rate",
+      "Maximum interest rate": "Maximum Interest Rate",
       "Terms": "Terms",
       "Settings": "Settings",
       "accounting": {
@@ -1438,6 +1451,7 @@
       "Base Price": "Base Price",
       "Base Percentage": "Base Percentage",
       "Beneficiary": "Beneficiary",
+      "Beneficiary Selection": "Beneficiary Selection",
       "Branch": "Branch",
       "Branch Office": "Branch Office",
       "Breakdown": "Breakdown",
@@ -1637,6 +1651,7 @@
       "Decimals to Display": "Decimals to Display",
       "Default": "Default",
       "Default Date Format": "Default Date Format",
+      "Default Datetime Format": "Default Datetime Format",
       "Default Font": "Default Font",
       "Default Language": "Default Language",
       "Default Savings Account": "Default Savings Account",
@@ -1751,6 +1766,12 @@
       "External ID": "External ID",
       "External Id": "External Id",
       "External id": "External id",
+      "External ID not found": "External ID not found",
+      "External ID lookup failed": "External ID lookup failed",
+      "External ID format is invalid": "External ID format is invalid",
+      "External ID verified successfully": "External ID verified successfully",
+      "Looking up External ID...": "Looking up External ID...",
+      "External ID lookup timed out": "External ID lookup timed out",
       "event with entity name of": "event with entity name of",
       "FAMILY MEMBERS": "FAMILY MEMBERS",
       "FCM End Point": "FCM End Point",
@@ -1848,6 +1869,7 @@
       "Hook Template": "Hook Template",
       "Host": "Host",
       "Host Name": "Host Name",
+      "Hour": "Hour",
       "ID": "ID",
       "INTEREST RATE CHART": "INTEREST RATE CHART",
       "Id": "Id",
@@ -2083,6 +2105,7 @@
       "Minimum Value": "Minimum Value",
       "Minimum days between disbursal and first repayment date": "Minimum days between disbursal and first repayment date",
       "Minimum gap between Installments": "Minimum gap between Installments",
+      "Minute": "Minute",
       "Mobile": "Mobile",
       "Mobile Banking App": "Mobile Banking App",
       "Mobile No": "Mobile No",
@@ -2989,6 +3012,7 @@
       "Create Hook": "Create Hook",
       "Create Journal Entry": "Create Journal Entry",
       "Create Loan Product": "Create Loan Product",
+      "Create Loan Originator": "Create Loan Originator",
       "Create Loans Account": "Create Loans Account",
       "Create New GL Account": "This option allows you to create new GL accounts.",
       "Create Office": "Create Office",
@@ -3332,6 +3356,7 @@
       "Manage Funds": "Manage Funds",
       "Manage Holidays": "Manage Holidays",
       "Manage Hooks": "Manage Hooks",
+      "Manage Loan Originators": "Manage Loan Originators",
       "Manage Offices": "Manage Offices",
       "Manage Offices page allows you to create, edit": "The Manage Offices page allows you to create, edit and add the offices within your organization.",
       "Manage Reports": "Manage Reports",
@@ -3650,7 +3675,14 @@
         "REOPEN": "Reopen",
         "WITHDRAW": "Withdraw",
         "DEPOSIT": "Deposit",
-        "TRANSFER": "Transfer"
+        "TRANSFER": "Transfer",
+        "POSTINTEREST": "Post Interest",
+        "CALCULATEINTEREST": "Calculate Interest",
+        "ASSIGNSTAFF": "Assign Staff",
+        "ACCEPTTRANSFER": "Accept Transfer",
+        "PROPOSETRANSFER": "Propose Transfer",
+        "REPAYMENT": "Repayment",
+        "DISBURSETOSAVINGS": "Disburse to Savings"
       },
       "entities": {
         "ROLE": "Role",
@@ -3679,7 +3711,11 @@
         "GUARANTOR": "Guarantor",
         "SHAREPRODUCT": "Share Product",
         "FIXEDDEPOSITPRODUCT": "Fixed Deposit Product",
-        "RECURRINGDEPOSITPRODUCT": "Recurring Deposit Product"
+        "FIXEDDEPOSITACCOUNT": "Fixed Deposit Account",
+        "RECURRINGDEPOSITPRODUCT": "Recurring Deposit Product",
+        "RECURRINGDEPOSITACCOUNT": "Recurring Deposit Account",
+        "ACCOUNTTRANSFER": "Account Transfer",
+        "SSBENEFICIARYTPT": "Self Service Beneficiaries TPT"
       }
     },
     "titles": {
@@ -3688,7 +3724,19 @@
       "Login": "Login"
     },
     "messages": {
-      "No Data Found": "No Data Found"
+      "No Data Found": "No Data Found",
+      "No Upcoming Charges Available": "No Upcoming Charges Available",
+      "No Active Loan Accounts Available": "No Active Loan Accounts Available",
+      "No Closed Loan Accounts Available": "No Closed Loan Accounts Available",
+      "No Active Saving Accounts Available": "No Active Saving Accounts Available",
+      "No Closed Saving Accounts Available": "No Closed Saving Accounts Available",
+      "No Active Fixed Deposit Accounts Available": "No Active Fixed Deposit Accounts Available",
+      "No Closed Fixed Deposit Accounts Available": "No Closed Fixed Deposit Accounts Available",
+      "No Active Recurring Deposit Accounts Available": "No Active Recurring Deposit Accounts Available",
+      "No Closed Recurring Deposit Accounts Available": "No Closed Recurring Deposit Accounts Available",
+      "No Active Share Accounts Available": "No Active Share Accounts Available",
+      "No Closed Share Accounts Available": "No Closed Share Accounts Available",
+      "No Collateral Data Available": "No Collateral Data Available"
     }
   },
   "languages": {
