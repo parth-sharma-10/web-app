@@ -285,7 +285,142 @@
     "validation.msg.savingsproduct.shortName.exceeds.max.length": "Krátký název nesmí být delší než {{params[0].value}} znaků.",
     "validation.msg.savingsproduct.withdrawalFeeAmount.cannot.be.blank": "Výše poplatku za výběr je povinná.",
     "validation.msg.savingsproduct.withdrawalFeeAmount.not.zero.or.greater": "Výše poplatku za výběr musí být vyšší nebo rovna nule, pokud je uveden.",
-    "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "Typ období poplatku za výběr je povinný."
+    "validation.msg.savingsproduct.withdrawalFeeType.is.not.one.of.expected.enumerations": "Vybraný typ poplatku za výběr není platný.",
+    "http": {
+      "connection": {
+        "title": "Chyba připojení",
+        "message": "Nelze se připojit k serveru. Zkontrolujte prosím připojení k internetu."
+      },
+      "badRequest": {
+        "title": "Neplatný požadavek",
+        "message": "Zkontrolujte prosím svůj vstup a zkuste to znovu."
+      },
+      "unauthorized": {
+        "title": "Neautorizováno",
+        "message": "Vaše relace vypršela. Přihlaste se prosím znovu.",
+        "action": "Přihlásit"
+      },
+      "forbidden": {
+        "title": "Přístup odepřen",
+        "message": "Nemáte oprávnění k provedení této akce."
+      },
+      "notFound": {
+        "title": "Nenalezeno",
+        "message": "Požadovaný zdroj nebyl nalezen.",
+        "contextMessage": "{{context}} nebyl nalezen."
+      },
+      "conflict": {
+        "title": "Konflikt",
+        "message": "Zdroj již existuje nebo došlo ke konfliktu."
+      },
+      "serverError": {
+        "title": "Chyba serveru",
+        "message": "Došlo k neočekávané chybě. Zkuste to prosím později."
+      },
+      "serviceUnavailable": {
+        "title": "Služba nedostupná",
+        "message": "Služba je dočasně nedostupná. Zkuste to prosím později."
+      },
+      "default": {
+        "title": "Chyba",
+        "message": "Došlo k neočekávané chybě."
+      }
+    },
+    "interceptor": {
+      "invalidParams": "V požadavku byly předány neplatné parametry!"
+    },
+    "auth": {
+      "pleaseWait": "Prosím čekejte...",
+      "startType": "Zahájení ověření",
+      "twoFactor": {
+        "type": "Vyžadováno dvoufaktorové ověření",
+        "message": "Vyžadováno dvoufaktorové ověření"
+      },
+      "passwordExpired": {
+        "type": "Heslo vypršelo",
+        "message": "Vaše heslo vypršelo, resetujte si prosím heslo!"
+      },
+      "success": {
+        "type": "Ověření úspěšné",
+        "message": "{{username}} úspěšně přihlášen!"
+      },
+      "passwordReset": {
+        "type": "Heslo úspěšně resetováno",
+        "message": "Vaše heslo bylo úspěšně resetováno!"
+      },
+      "callbackFailed": {
+        "type": "Ověření selhalo",
+        "message": "Ověření nelze dokončit. Zkuste to prosím znovu."
+      },
+      "callbackError": {
+        "type": "Chyba ověření",
+        "message": "Během ověřování došlo k chybě. Zkuste to prosím znovu."
+      }
+    },
+    "hooks": {
+      "lastEvent": "Je vyžadována alespoň jedna událost. Nelze smazat poslední událost."
+    },
+    "generic": {
+      "unexpected": "Došlo k chybě. Zkuste to prosím znovu.",
+      "unexpectedRetry": "Došlo k neočekávané chybě. Zkuste to prosím znovu.",
+      "unexpectedShort": "Došlo k neočekávané chybě."
+    },
+    "holiday": {
+      "invalidDate": "Vybrán neplatný datum. Vyberte prosím platný datum.",
+      "invalidRepaymentDate": "Neplatný datum přeplánování splátky. Vyberte prosím platný datum."
+    },
+    "report": {
+      "type": "Generování reportu",
+      "generated": "Report: data {{reportName}} vygenerována",
+      "generatedNoData": "Report: {{reportName}} vygenerován bez dat"
+    },
+    "clipboard": {
+      "type": "Schránka",
+      "copied": "Zkopírováno: {{value}}"
+    },
+    "tenant": {
+      "changed": {
+        "type": "Tenant změněn"
+      }
+    },
+    "config": {
+      "setConfig": "{{type}} nastavení konfigurace"
+    },
+    "loans": {
+      "undoWriteOff": {
+        "type": "Vrácení odpisu selhalo",
+        "message": "Při zpracování vrácení odpisu došlo k chybě. Zkuste to prosím znovu nebo kontaktujte podporu."
+      },
+      "alreadyAdjusted": "Částka kapitalizovaného příjmu již upravena",
+      "adjustment": "Úprava {{type}} transakce",
+      "capitalizedIncomeLimit": "Částka úpravy kapitalizovaného příjmu musí být nižší nebo rovna",
+      "buyDownFeeAdjusted": "Částka poplatku Buy Down již upravena",
+      "buyDownFeeLimit": "Částka úpravy poplatku Buy Down musí být nižší nebo rovna",
+      "businessRule": "Obchodní pravidlo",
+      "alertWithAmount": "{{label}}: {{amount}}"
+    },
+    "error.auth.type": "Chyba ověření",
+    "error.auth.message": "Vaše relace vypršela nebo jsou přihlašovací údaje neplatné.",
+    "error.token.invalid.type": "Neplatný token",
+    "error.token.invalid.message": "Poskytnutý jednorázový token je neplatný.",
+    "error.bad.request.type": "Chybný požadavek",
+    "error.bad.request.message": "V požadavku byly předány neplatné parametry!",
+    "error.unauthorized.type": "Neautorizováno",
+    "error.unauthorized.message": "Vaše relace vypršela nebo jsou přihlašovací údaje neplatné.",
+    "error.resource.not.found.type": "Zdroj nenalezen",
+    "error.resource.not.found.message": "Požadovaný zdroj nebyl nalezen.",
+    "error.resource.notImplemented.type": "Neimplementováno",
+    "error.resource.notImplemented.message": "Neimplementovaná funkce!",
+    "error.server.internal.type": "Interní chyba serveru",
+    "error.server.internal.message": "Na serveru došlo k neočekávané chybě. Zkuste to prosím později.",
+    "error.unknown.type": "Neznámá chyba",
+    "error.unknown.message": "Došlo k neočekávané chybě.",
+    "validation.required": "Toto pole je povinné",
+    "validation.minLength": "Minimální délka je {{requiredLength}}",
+    "validation.emailInvalid": "E-mail není platný",
+    "validation.requiredField": "{{label}} je povinné pole.",
+    "validation.mustBeAtLeast": "{{field}} musí být alespoň {{min}}",
+    "validation.mustBePositive": "{{field}} musí být kladné číslo."
   },
   "labels": {
     "version": {
@@ -478,6 +613,7 @@
       "Export to File": "Export do FILE",
       "Export CSV": "Vývozní CSV",
       "Export XLS": "Vývozní XLS",
+      "Export to PDF": "Export do PDF",
       "Export KYC": "Vývozní KYC",
       "Validate Documentation": "Ověřit dokumentaci",
       "INCOMPLETE": "NEÚPLNÉ",
@@ -617,7 +753,8 @@
       "Retry": "Opakovat",
       "PRINT": "Tisk",
       "DONE": "Hotovo",
-      "Submitting": "Odesílání"
+      "Submitting": "Odesílání",
+      "OK": "OK"
     },
     "catalogs": {
       "Interest payment waiver": "Prominutí platby úroků",
@@ -888,7 +1025,8 @@
       "Working Capital": "Provozní kapitál",
       "DAYS": "DNY",
       "MONTHS": "MĚSÍCE",
-      "YEARS": "ROKY"
+      "YEARS": "ROKY",
+      "Loan Creation": "Vytvoření úvěru"
     },
     "commons": {
       "50 characters long": "50 znaků dlouhé",
@@ -914,7 +1052,9 @@
       "do not match": "neshodují",
       "does not match": "nesouhlasí",
       "greater equal to than 0": "větší rovno 0",
+      "higher than allowed": "vyšší než povolené",
       "invalid": "neplatný",
+      "Invalid amount format": "Neplatný formát částky",
       "is": "je",
       "Is": "Je",
       "is required": "je požadováno",
@@ -934,6 +1074,7 @@
       "on": "na",
       "every": "každý",
       "Password validation": "Heslo by mělo obsahovat minimálně {{minchar}} znaků, které by měly obsahovat 1 velké písmeno, malé písmeno a speciální znak a nemělo by se skládat z opakujících se znaků nebo mezer.",
+      "Must be a positive integer": "Musí být kladné celé číslo",
       "Must be at least": "Musí být alespoň",
       "Must be less or equal to": "Musí být menší nebo rovno",
       "must be after or equal to start date": "musí být po nebo rovno datu zahájení",
@@ -993,6 +1134,7 @@
       "Beneficiary": "Příjemce",
       "Beneficiary Selection": "Výběr příjemce",
       "Block Savings Account": "Blokovat spořicí účet",
+      "Breach Configuration": "Konfigurace porušení",
       "Bulk Import": "Hromadný import",
       "Bulk Loan Reassignment": "Hromadné přeřazení půjčky",
       "Business Rule Parameters": "Parametry obchodních pravidel",
@@ -1554,6 +1696,7 @@
       "Beneficiary": "Příjemce",
       "Branch": "Větev",
       "Branch Office": "Pobočka",
+      "Breach": "Porušení",
       "Breakdown": "Zhroutit se",
       "Boolean": "Boolean",
       "Business Date": "Obchodní datum",
@@ -1761,6 +1904,8 @@
       "Delinquency Bucket": "Delikvence Bucket",
       "Delinquency Classification": "Klasifikace delikvence",
       "Delinquency Payment Rule": "Pravidlo pro platbu v prodlení",
+      "Delinquency Grace Days": "Dny odkladu prodlení",
+      "Delinquency Start Type": "Typ zahájení prodlení",
       "Delinquency Tags": "Štítky delikvence",
       "Delinquent Days": "Delikventní dny",
       "Delivery Method": "způsob doručení",
@@ -1796,6 +1941,7 @@
       "Disbursement On": "Vyplácení zapnuto",
       "Disbursement on": "Výplata zapnuta",
       "Discount": "Sleva",
+      "Discount must be greater than or equal to 0": "Sleva musí být větší nebo rovna 0",
       "Display Name": "Zobrazovaný název",
       "Dividend Amount": "Částka dividendy",
       "Dividend Period End Date": "Datum ukončení dividendového období",
@@ -1829,6 +1975,7 @@
       "Enable Down Payment": "Povolit zálohu",
       "Enable Lock-in Period": "Povolit zamykací období",
       "Enable Multiple Disbursals": "Povolit vícenásobné výplaty",
+      "Enable Near Breach": "Aktivovat blížící se porušení",
       "Enabled": "Povoleno",
       "End Date": "Datum ukončení",
       "End Point": "Koncový bod",
@@ -2220,6 +2367,9 @@
       "Name": "název",
       "Name Decorated": "Jméno vyzdobeno",
       "Name of the Organization": "Název organizace",
+      "Near Breach Evaluation Frequency": "Frekvence vyhodnocení blížícího se porušení",
+      "Near Breach Evaluation Frequency Type": "Typ frekvence vyhodnocení blížícího se porušení",
+      "Near Breach Threshold": "Práh blížícího se porušení",
       "Net Cash": "Čistá hotovost",
       "New Interest Rate": "Nová úroková sazba",
       "Next Meeting Date": "Datum příští schůzky",
@@ -2241,6 +2391,7 @@
       "Not Available": "Není dostupný",
       "Not Provided": "Není poskytnuto",
       "Note": "Poznámka",
+      "Note is too long": "Poznámka je příliš dlouhá",
       "Notes": "Poznámky",
       "Notes/Comments": "Poznámky/Komentáře",
       "Notification": "Oznámení",
@@ -2254,6 +2405,7 @@
       "Number of Active Overdue Group Loans": "Počet aktivních skupinových půjček po splatnosti",
       "Number of Centers": "Počet středisek",
       "Number of Clients": "Počet klientů",
+      "Please enter a valid number": "Zadejte prosím platné číslo",
       "Number of Collaterals": "Počet kolaterálů",
       "Number of Days to Dormant sub-status": "Dílčí stav Počet dnů do klidového stavu",
       "Number of Days to Escheat": "Počet dní do Escheat",
@@ -2974,6 +3126,7 @@
       "Withdrawal": "Vybrání",
       "Withdrawn by Client": "Staženo klientem",
       "Write Off": "Odepsat",
+      "Update discount": "Aktualizovat slevu",
       "Apply Additional Shares": "Použít další",
       "Redeem Shares": "Uplatnit akcie",
       "Approve Additional Shares": "Schválit další akcie",
@@ -3240,6 +3393,7 @@
       "Define Tax Groups": "Definujte daňové skupiny",
       "Define Tax components": "Definujte daňové složky",
       "Define Tax components and Tax groups": "Definujte daňové složky a daňové skupiny",
+      "Define breaches for working capital products": "Definujte porušení pro produkty pracovního kapitálu",
       "Define charges/penalties for loan products, savings and deposit products": "Definujte poplatky/sankce pro úvěrové produkty, spořicí a depozitní produkty",
       "Define collaterals for Collateral Management": "Definujte kolaterály pro správu kolaterálu",
       "Define delinquency bucket as set of ranges": "Definujte segment delikvence jako sadu rozsahů",
@@ -3338,6 +3492,7 @@
       "Fixed Deposit Account Interest Rate Chart": "Tabulka úrokových sazeb na účtu s pevným vkladem",
       "Fixed Deposit Account Standing Instructions": "Pokyny k trvalému vkladovému účtu",
       "Fixed Deposit Account Transactions": "Transakce na pevném vkladovém účtu",
+      "Fixed Deposit Account Details": "Detaily účtu terminovaného vkladu",
       "Fixed Deposit Account View": "Pohled na účet s pevným vkladem",
       "Fixed Deposit Products": "Produkty s pevným vkladem",
       "Fixed Deposit Products defines the rules, default settings": "Produkty s pevným vkladem definují pravidla, výchozí nastavení a omezení pro nabídky finančních <br> pevných vkladů (také označované jako termínované vklady). Produkt s pevným vkladem poskytuje pro klienty finanční instituce šablonu pro více účtů s pevným vkladem.",
@@ -3393,6 +3548,7 @@
       "LoanAccountCustomSnapshotBusinessEvent": "LoanAccountCustomSnapshotBusinessEvent",
       "LoanAccountDelinquencyPauseChangedBusinessEvent": "LoanAccount DelikvencePauseChangedBusinessEvent",
       "LoanAccountSnapshotBusinessEvent": "LoanAccountSnapshotBusinessEvent",
+      "Loan Account Details": "Detaily úvěrového účtu",
       "Loan Account Actions": "Akce na úvěrovém účtu",
       "Loan Collateral Details": "Podrobnosti o zajištění úvěru",
       "Loan Disbursal": "Vyplacení půjčky",
@@ -3517,6 +3673,7 @@
       "Provisioning criteria definitions": "Vyplňte všechny definice kritérií poskytování.",
       "Precedes of": "Předchází",
       "Recurring Deposit Account Charges": "Opakované poplatky za vkladový účet",
+      "Recurring Deposit Account Details": "Detaily účtu opakovaného vkladu",
       "Recurring Deposit Account Interest Rate Chart": "Graf úrokových sazeb pro opakující se vkladový účet",
       "Recurring Deposit Account Standing Instructions": "Pokyny k trvalému vkladovému účtu",
       "Recurring Deposit Account Transactions": "Opakující se transakce na vkladovém účtu",
@@ -3582,6 +3739,7 @@
       "Share Products Dividends": "Sdílejte produkty Dividendy",
       "Share products define the rules, default settings": "Sdílené produkty definují pravidla, výchozí nastavení a omezení pro akcie a dividendy finanční instituce. Sdílený produkt poskytuje šablonu pro více účtů, které jsou nebo budou drženy klienty finanční instituce.",
       "Shares": "akcie",
+      "Shares Account Details": "Detaily účtu akcií",
       "Shares Account Actions": "Akce na účtu akcií",
       "Shares Account Charges": "Poplatky na účtu akcií",
       "Shares Account Dividends": "Akcie Účet Dividendy",
@@ -3747,7 +3905,9 @@
       "Failed to update payment type. Please try again.": "Aktualizace typu platby se nezdařila. Zkuste to prosím znovu.",
       "Search and assign this beneficiary to an existing Mifos client account": "Vyhledejte a přiřaďte tohoto příjemce k existujícímu účtu klienta Mifos",
       "Failed to search clients. Please try again.": "Hledání klientů se nezdařilo. Zkuste to prosím znovu.",
-      "Process Remittance": "Zpracovat remitenci"
+      "Process Remittance": "Zpracovat remitenci",
+      "Loan Originators": "Poskytovatelé úvěrů",
+      "Loan Reschedules": "Termíny půjček"
     },
     "permissions": {
       "actions": {
@@ -4067,7 +4227,9 @@
     "No Closed Share Accounts Found": "Žádné uzavřené účty podílů nalezeny",
     "No Collateral Data Found": "Žádná data o kolaterálu nalezeny",
     "No Identities Found": "Žádné identity nalezeny",
-    "validationSaved": "Data ověření byla úspěšně uložena."
+    "validationSaved": "Data ověření byla úspěšně uložena.",
+    "workingCapitalDiscountUpdated": "Sleva pro úvěr pracovního kapitálu byla úspěšně aktualizována.",
+    "unableToUpdateDiscount": "Slevu se nepodařilo aktualizovat."
   },
   "languages": {
     "cs-CS": "Čeština",
@@ -4407,5 +4569,59 @@
     "ZW": "Zimbabwe"
   },
   "Deactivate Role": "Deaktivovat roli",
-  "Delete Role": "Smazat roli"
+  "Delete Role": "Smazat roli",
+  "clients": {
+    "actions": {
+      "close": {
+        "success": "Klient byl úspěšně uzavřen."
+      },
+      "reject": {
+        "success": "Klient byl úspěšně odmítnut."
+      },
+      "withdraw": {
+        "success": "Klient byl úspěšně stažen."
+      },
+      "reactivate": {
+        "success": "Klient byl úspěšně reaktivován.",
+        "failure": "Nepodařilo se reaktivovat klienta."
+      },
+      "activate": {
+        "success": "Klient byl úspěšně aktivován.",
+        "failure": "Nepodařilo se aktivovat klienta."
+      },
+      "acceptTransfer": {
+        "success": "Převod klienta byl úspěšně přijat."
+      },
+      "rejectTransfer": {
+        "success": "Převod klienta byl úspěšně odmítnut."
+      },
+      "undoTransfer": {
+        "success": "Převod klienta byl úspěšně zrušen."
+      },
+      "undoRejection": {
+        "success": "Odmítnutí klienta bylo úspěšně zrušeno."
+      },
+      "transfer": {
+        "success": "Převod klienta byl úspěšně navržen.",
+        "failure": "Nepodařilo se navrhnout převod klienta."
+      },
+      "addCharge": {
+        "success": "Poplatek klienta byl úspěšně přidán."
+      },
+      "addCollateral": {
+        "success": "Kolaterál klienta byl úspěšně přidán."
+      },
+      "assignStaff": {
+        "success": "Personál byl úspěšně přidělen ke klientovi.",
+        "failure": "Nepodařilo se přidělit personál ke klientovi."
+      },
+      "updateSavingsAccount": {
+        "success": "Spořicí účet klienta byl úspěšně aktualizován."
+      },
+      "takeSurvey": {
+        "success": "Průzkum byl úspěšně odeslán.",
+        "failure": "Nepodařilo se odeslat průzkum."
+      }
+    }
+  }
 }
